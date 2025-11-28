@@ -8,10 +8,10 @@ import type {
 } from "../types";
 
 import {
-  mobile,
   backend,
-  creator,
   web,
+  mobile,
+  creator,
   javascript,
   typescript,
   html,
@@ -25,12 +25,10 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  smartHome,
+  deepfake,
+  clickk,
+  travelplanner,
   threejs,
 } from "../assets";
 
@@ -54,18 +52,12 @@ const services: TService[] = [
     title: "Web Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  
   {
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+
 ];
 
 const technologies: TTechnology[] = [
@@ -125,55 +117,16 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Full-Stack Developer Intern",
+    companyName: "Six-Month Internship",
     icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    iconBg: "#383E56",
+    date: "2025 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining full-stack features with Next.js, Node.js, and SQL backends.",
+      "Designing and documenting APIs that connect responsive frontends with backend services.",
+      "Building reusable components, elevating UI/UX, and improving performance across modules.",
+      "Reviewing code, collaborating with teammates, and following best practices for version control.",
     ],
   },
 ];
@@ -207,67 +160,58 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Smart Home Automation Dashboard",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Control lights, fans, and appliances from one responsive dashboard with automation rules, telemetry, and real-time device feedback.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
+      { name: "iot", color: "orange-text-gradient" },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: smartHome,
+    sourceCodeLink: "https://github.com/YASHSALI2005/SMART-HOME-AUTOMATION",
   },
   {
-    name: "Job IT",
+    name: "Deepfake Detection System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An AI/ML pipeline that inspects uploaded video frames, extracts features, and flags potential deepfakes through a streamlined web interface.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "machine-learning", color: "green-text-gradient" },
+      // { name: "opencv", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: deepfake,
+    sourceCodeLink: "https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL",
+    liveDemoLink: "https://your-deepfake-detector-demo.vercel.app",
   },
   {
-    name: "Trip Guide",
+    name: "TravelPlanner",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Responsive travel experience where users explore destinations, compare packages, and submit trip inquiries backed by a Node.js + MongoDB stack.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "express", color: "pink-text-gradient" },
+      { name: "mongodb", color: "orange-text-gradient" },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: travelplanner,
+    sourceCodeLink: "https://github.com/YASHSALI2005/Travel-Planner-Website",
+    liveDemoLink: "https://travel-planner-websitefrontend.vercel.app/",
+  },
+  {
+    name: "Clickk — AI Powered Code Editor",
+    description:
+      "Clickk is an AI-powered command-style code editor that keeps your hands on the keyboard—type natural instructions, trigger workflows, and manage your workspace without traditional UI clicking.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "zustand", color: "pink-text-gradient" },
+      { name: "shadcn-ui", color: "orange-text-gradient" },
+    ],
+    image: clickk,
+    sourceCodeLink: "https://github.com/YASHSALI2005/CLICKK",
+    liveDemoLink: "https://clickk-demo.vercel.app",
   },
 ];
 

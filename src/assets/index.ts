@@ -26,9 +26,12 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import smartHome from "./smart.webp";
+import deepfake from "./deepfake.jpg";
+import clickk from "./clickk.jpg";
+import travelplanner from "./travelplanner.png";
 
 export {
   logo,
@@ -56,7 +59,10 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
   jobit,
   tripguide,
+  smartHome,
+  deepfake,
+  clickk,
+  travelplanner,
 };

@@ -16,7 +16,10 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  liveDemoLink,
 }) => {
+  const openInNewTab = (url: string) => window.open(url, "_blank", "noopener,noreferrer");
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -27,23 +30,37 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         glareColor="#aaa6c3"
       >
         <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
+          <div
+            className="relative w-full"
+            style={{ aspectRatio: "16 / 9", minHeight: "230px" }}
+          >
             <img
               src={image}
               alt={name}
-              className="h-full w-full rounded-2xl object-cover"
+              className="h-full w-full rounded-2xl object-contain bg-black/30"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-              <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+            <div className="card-img_hover absolute inset-0 m-3 flex items-start justify-end gap-2">
+              {liveDemoLink && (
+                <button
+                  type="button"
+                  onClick={() => openInNewTab(liveDemoLink)}
+                  className="bg-white/10 text-white hover:bg-white/20 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wide transition-colors backdrop-blur"
+                >
+                  Live
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => openInNewTab(sourceCodeLink)}
+                className="black-gradient flex h-10 w-10 items-center justify-center rounded-full"
+                aria-label={`${name} source code`}
               >
                 <img
                   src={github}
                   alt="github"
                   className="h-1/2 w-1/2 object-contain"
                 />
-              </div>
+              </button>
             </div>
           </div>
           <div className="mt-5">

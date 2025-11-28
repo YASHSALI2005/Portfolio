@@ -12,7 +12,15 @@ type TConfig = {
   };
   hero: {
     name: string;
-    p: string[];
+    role: string;
+    heading: string;
+    subheading: string;
+    ctaText: string;
+    socialLinks: {
+      github: string;
+      linkedin: string;
+      email: string;
+    };
   };
   contact: {
     form: {
@@ -40,13 +48,22 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Yash Sali — Full-Stack Developer",
+    fullName: "Yash Sali",
+    email: "salirajesh7@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Yash Sali",
+    role: "Full-Stack Developer & IT Engineering Student",
+    heading: "I build web apps, AI projects, and smart systems.",
+    subheading:
+      "I'm a final year IT engineering student and full-stack developer intern, focused on creating responsive web apps, real-time experiences, and intelligent systems using Next.js, Node.js, and AI/ML.",
+    ctaText: "View my work",
+    socialLinks: {
+      github: "https://github.com/YASHSALI2005",
+      linkedin: "https://www.linkedin.com/in/yashsali05",
+      email: "mailto:salirajesh7@gmail.com",
+    },
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +84,14 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm Yash Sali, a final-year IT engineering student and full-stack developer
+      passionate about building meaningful digital products. I enjoy turning ideas into
+      interactive and functional solutions—from scalable web apps and PWAs, to AI/ML systems
+      and IoT projects. Recent work includes Clickk, a typing-driven productivity experience
+      inspired by Cursor workflows, a deepfake detection model, a smart home automation
+      system, and real-time WebSocket applications. I thrive across the stack: UI/UX,
+      frontend architecture, backend services, APIs, databases, deployment, and workflow
+      refinement.`,
     },
     experience: {
       p: "What I have done so far",

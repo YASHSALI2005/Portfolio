@@ -5,6 +5,12 @@ import { ComputersCanvas } from "../canvas";
 import { config } from "../../constants/config";
 
 const Hero = () => {
+  const heroSocials = [
+    { label: "GitHub", url: config.hero.socialLinks.github },
+    { label: "LinkedIn", url: config.hero.socialLinks.linkedin },
+    { label: "Email", url: config.hero.socialLinks.email },
+  ];
+
   return (
     <section className={`relative mx-auto h-screen w-full`}>
       <div
@@ -15,14 +21,38 @@ const Hero = () => {
           <div className="violet-gradient h-40 w-1 sm:h-80" />
         </div>
 
-        <div>
+        <div className="relative z-10">
+          <p className="text-white-100 mb-2 text-lg">{config.hero.role}</p>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
           </h1>
-          <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            {config.hero.p[0]} <br className="hidden sm:block" />
-            {config.hero.p[1]}
+          <p className={`${styles.heroSubText} text-white-100 mt-4`}>
+            {config.hero.heading}
           </p>
+          <p className="text-white-100 mt-4 max-w-3xl text-[18px] leading-relaxed">
+            {config.hero.subheading}
+          </p>
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href="#work"
+              className="bg-[#915EFF] text-white hover:bg-[#7c46ff] w-fit rounded-full px-8 py-3 text-[16px] font-semibold transition-colors"
+            >
+              {config.hero.ctaText}
+            </a>
+            <div className="flex flex-wrap gap-4 text-sm uppercase tracking-wide text-white-100">
+              {heroSocials.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  {social.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
