@@ -1,4 +1,5 @@
 # Yash Sali — Immersive 3D Portfolio
+# Yash Sali — Immersive 3D Portfolio
 
 [![Made by Yash Sali](https://img.shields.io/badge/Made%20by-Yash%20Sali-7c3aed?style=flat-square)](https://github.com/YASHSALI2005)
 [![GitHub Repo](https://img.shields.io/badge/Repo-Portfolio-black?logo=github)](https://github.com/YASHSALI2005/Portfolio)
@@ -47,7 +48,19 @@
 - Git
 
 ### Clone & Install
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm (comes with Node) or pnpm/yarn
+- Git
+
+### Clone & Install
 ```bash
+git clone https://github.com/YASHSALI2005/Portfolio.git
+cd Portfolio
 git clone https://github.com/YASHSALI2005/Portfolio.git
 cd Portfolio
 npm install
@@ -58,7 +71,34 @@ Development server runs at `http://localhost:5173`.
 
 ### Environment Variables
 Create a `.env` file (never commit secrets) and add your EmailJS credentials:
+Development server runs at `http://localhost:5173`.
+
+### Environment Variables
+Create a `.env` file (never commit secrets) and add your EmailJS credentials:
 ```env
+VITE_EMAILJS_SERVICE_ID=xxxx
+VITE_EMAILJS_TEMPLATE_ID=xxxx
+VITE_EMAIL_JS_ACCESS_TOKEN=xxxx
+```
+
+> Get the keys from [EmailJS](https://www.emailjs.com/) and enable the template you wired into `Contact.tsx`.
+
+### Useful Scripts
+
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Start Vite dev server |
+| `npm run build` | Generate production bundle (./dist) |
+| `npm run preview` | Serve the built bundle locally |
+| `npm run lint` | Run ESLint |
+| `npm run ts:check` | Type-check using tsc |
+
+---
+
+## 🧱 Project Anatomy
+
+<details>
+<summary>Expand the tree</summary>
 VITE_EMAILJS_SERVICE_ID=xxxx
 VITE_EMAILJS_TEMPLATE_ID=xxxx
 VITE_EMAIL_JS_ACCESS_TOKEN=xxxx
