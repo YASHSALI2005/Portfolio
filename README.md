@@ -1,5 +1,4 @@
 # Yash Sali — Immersive 3D Portfolio
-# Yash Sali — Immersive 3D Portfolio
 
 [![Made by Yash Sali](https://img.shields.io/badge/Made%20by-Yash%20Sali-7c3aed?style=flat-square)](https://github.com/YASHSALI2005)
 [![GitHub Repo](https://img.shields.io/badge/Repo-Portfolio-black?logo=github)](https://github.com/YASHSALI2005/Portfolio)
