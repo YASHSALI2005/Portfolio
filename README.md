@@ -7,7 +7,8 @@
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Three.js%20%7C%20TS-2563eb.svg)](#-tech-stack)
 
 ![3D Portfolio preview](src/assets/preview.png)
-
+### 🚀 Live Demo  
+🔗 **https://portfolio-new-mocha-eight.vercel.app/**
 > A cinematic, keyboard-first developer portfolio that blends a Three.js hero experience with real projects, testimonials, and a contact form powered by EmailJS.
 
 - **Role**: Full-stack developer & IT engineering student  
@@ -139,7 +140,7 @@ Need a bare-metal/static hosting option? Run `npm run build` and drop the `dist/
 This project started as my personal portfolio, but feel free to explore, fork, or adapt it for yours.  
 If you add something cool, open an issue or PR so I can check it out!
 
-1. `git checkout -b feature/awesome`
+1. `git checkout -b feature/awesome.`
 2. Push your branch
 3. Open a PR with screenshots or a short Loom
 
@@ -147,7 +148,7 @@ If you add something cool, open an issue or PR so I can check it out!
 
 ## 📬 Contact
 
-- Portfolio: [https://yashsali.dev](https://yashsali.dev) _(coming soon)_
+- Portfolio: [YASH SALI PORTFOLIO]([https://yashsali.dev](https://portfolio-new-mocha-eight.vercel.app/)) 
 - GitHub: [@YASHSALI2005](https://github.com/YASHSALI2005)
 - LinkedIn: [Yash Sali](https://www.linkedin.com/in/yashsali05)
 - Email: [salirajesh7@gmail.com](mailto:salirajesh7@gmail.com)
