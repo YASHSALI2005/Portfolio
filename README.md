@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg)](LICENSE)
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Three.js%20%7C%20TS-2563eb.svg)](#-tech-stack)
 
-![3D Portfolio preview](src/assets/preview.png)
+![3D Portfolio preview](src/assets/portfolio.png)
 ### 🚀 Live Demo  
 🔗 **https://portfolio-new-mocha-eight.vercel.app/**
 > A cinematic, keyboard-first developer portfolio that blends a Three.js hero experience with real projects, testimonials, and a contact form powered by EmailJS.
