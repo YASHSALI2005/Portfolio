@@ -91,30 +91,7 @@ VITE_EMAIL_JS_ACCESS_TOKEN=xxxx
 | `npm run build` | Generate production bundle (./dist) |
 | `npm run preview` | Serve the built bundle locally |
 | `npm run lint` | Run ESLint |
-| `npm run ts:check` | Type-check using tsc |
-
----
-
-## 🧱 Project Anatomy
-
-<details>
-<summary>Expand the tree</summary>
-VITE_EMAILJS_SERVICE_ID=xxxx
-VITE_EMAILJS_TEMPLATE_ID=xxxx
-VITE_EMAIL_JS_ACCESS_TOKEN=xxxx
-```
-
-> Get the keys from [EmailJS](https://www.emailjs.com/) and enable the template you wired into `Contact.tsx`.
-
-### Useful Scripts
-
-| Script | Purpose |
-| --- | --- |
-| `npm run dev` | Start Vite dev server |
-| `npm run build` | Generate production bundle (./dist) |
-| `npm run preview` | Serve the built bundle locally |
-| `npm run lint` | Run ESLint |
-| `npm run ts:check` | Type-check using tsc |
+| `npm run ts: check` | Type-check using tsc |
 
 ---
 
