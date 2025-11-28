@@ -10,8 +10,6 @@ import type {
 import {
   backend,
   web,
-  mobile,
-  creator,
   javascript,
   typescript,
   html,
