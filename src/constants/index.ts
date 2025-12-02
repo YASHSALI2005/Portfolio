@@ -181,7 +181,7 @@ const projects: TProject[] = [
     ],
     image: deepfake,
     sourceCodeLink: "https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL",
-    liveDemoLink: "https://deepfake-detection-model-frontendd.onrender.com/,
+    liveDemoLink: "https://deepfake-detection-model-frontendd.onrender.com/",
   },
   {
     name: "TravelPlanner",
