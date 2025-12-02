@@ -181,7 +181,7 @@ const projects: TProject[] = [
     ],
     image: deepfake,
     sourceCodeLink: "https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL",
-    liveDemoLink: "https://your-deepfake-detector-demo.vercel.app",
+    liveDemoLink: "https://deepfake-detection-model-frontendd.onrender.com/,
   },
   {
     name: "TravelPlanner",
@@ -209,7 +209,7 @@ const projects: TProject[] = [
     ],
     image: clickk,
     sourceCodeLink: "https://github.com/YASHSALI2005/CLICKK",
-    liveDemoLink: "https://clickk-demo.vercel.app",
+    liveDemoLink: "https://clickk-frontend.onrender.com/",
   },
 ];
 
