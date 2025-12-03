@@ -23,6 +23,7 @@ import {
   figma,
   docker,
   meta,
+  chestxrayai,
   smartHome,
   deepfake,
   clickk,
@@ -170,6 +171,20 @@ const projects: TProject[] = [
     image: smartHome,
     sourceCodeLink: "https://github.com/YASHSALI2005/SMART-HOME-AUTOMATION",
   },
+  {
+  name: "Chest X-Ray AI",
+  description:
+    "Web-based chest X-ray analysis tool that uses a PyTorch DenseNet121 model for multi-label disease classification with an interactive preview and threshold control.",
+  tags: [
+    { name: "react", color: "blue-text-gradient" },
+    { name: "pytorch", color: "orange-text-gradient" },
+    { name: "deep-learning", color: "green-text-gradient" },
+    { name: "python-backend", color: "pink-text-gradient" },
+  ],
+  image: chestxrayai, // update to your imported image variable
+  sourceCodeLink: "https://github.com/YASHSALI2005/Chest-X-Ray-Multi-Label-Disease-Classification-using-Deep-Learning.git", // put your GitHub repo link here
+  liveDemoLink: "https://chest-x-ray-multi-label-disease.onrender.com/",
+ },
   {
     name: "Deepfake Detection System",
     description:
