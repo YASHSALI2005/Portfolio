@@ -48,19 +48,7 @@
 - Git
 
 ### Clone & Install
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm (comes with Node) or pnpm/yarn
-- Git
-
-### Clone & Install
 ```bash
-git clone https://github.com/YASHSALI2005/Portfolio.git
-cd Portfolio
 git clone https://github.com/YASHSALI2005/Portfolio.git
 cd Portfolio
 npm install
@@ -70,18 +58,61 @@ npm run dev
 Development server runs at `http://localhost:5173`.
 
 ### Environment Variables
-Create a `.env` file (never commit secrets) and add your EmailJS credentials:
-Development server runs at `http://localhost:5173`.
+Create a `.env` file in the root directory (never commit secrets) and add your EmailJS credentials:
 
-### Environment Variables
-Create a `.env` file (never commit secrets) and add your EmailJS credentials:
 ```env
-VITE_EMAILJS_SERVICE_ID=xxxx
-VITE_EMAILJS_TEMPLATE_ID=xxxx
-VITE_EMAIL_JS_ACCESS_TOKEN=xxxx
+    VITE_EMAILJS_SERVICE_ID=your_service_id
+    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-> Get the keys from [EmailJS](https://www.emailjs.com/) and enable the template you wired into `Contact.tsx`.
+**How to get EmailJS credentials:**
+1. Sign up at [EmailJS](https://www.emailjs.com/)
+2. Go to **Email Services** → Add a service (Gmail, Outlook, etc.)
+3. Go to **Email Templates** → Create a new template
+4. Go to **Account** → **API Keys** → Copy your **Public Key**
+5. Copy your **Service ID** and **Template ID** from the respective sections
+
+**Email Template Content:**
+
+Use this template in your EmailJS template editor:
+
+**Subject:** `New Contact Form Message from {{from_name}}`
+
+**Content:**
+```
+Hello {{to_name}},
+
+You have received a new message from your portfolio contact form:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Sender Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: {{from_name}}
+Email: {{from_email}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Message:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+{{message}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You can reply directly to this email to respond to {{from_name}}.
+
+Best regards,
+Your Portfolio Contact Form
+```
+
+**Template Variables:**
+- `{{from_name}}` - Sender's name
+- `{{from_email}}` - Sender's email  
+- `{{to_name}}` - Your name (from config)
+- `{{to_email}}` - Your email (from config)
+- `{{message}}` - Message content
+
+> Make sure to enable the template in EmailJS dashboard. The form includes validation and error handling for a smooth user experience.
 
 ### Useful Scripts
 
