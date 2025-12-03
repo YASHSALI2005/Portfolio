@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import chestxrayai from "./chestxrayai.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -65,4 +66,5 @@ export {
   deepfake,
   clickk,
   travelplanner,
+  chestxrayai,
 };
