@@ -73,7 +73,7 @@ export const Hero = () => {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="pb-8 pt-20 sm:pt-28"
+      className="pb-4 pt-10 sm:pt-14"
     >
       <div className="flex items-center gap-5">
         <img
