@@ -15,5 +15,12 @@
 - `travelplanner.png` (1.3 MB) and `chestxrayai.png` (800 KB) should be compressed / converted to WebP.
 - Contact form not tested end-to-end (needs the EmailJS env vars locally).
 
+## Domain
+- `yashsali.me` — Namecheap account `Yashsali12`, free via GitHub Student Pack (claimed through GitHub account `yashsali1`). Expires **2027-09-26**, auto-renew OFF.
+- Vercel project `portfolio-new`: `www.yashsali.me` serves Production; `yashsali.me` 308-redirects to www.
+- Namecheap DNS: A `@` → 216.198.79.1, CNAME `www` → e0b5eb0cfb4b45e9.vercel-dns-017.com.
+
 ## Watch for
+- Before 2027-09-26: renew `yashsali.me` (paid) or it lapses.
+- Revoke the NC.me OAuth app on GitHub `yashsali1` (it has `repo` scope) — domain doesn't depend on it.
 - The GitHub calendar fetches from a third-party API (`github-contributions-api.jogruber.de`, via `react-github-calendar`). If it's down, that section shows an error message; the rest of the page is unaffected.
