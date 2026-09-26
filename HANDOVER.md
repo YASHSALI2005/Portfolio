@@ -8,9 +8,8 @@
 - `npm run build` and `npm run lint` pass; checked visually in Chrome via `vite preview`.
 
 ## Open
-- Resume link hidden until `profile.resume` is set in `src/data.ts`.
-- Experience bullets for the ML roles are thin (written from LinkedIn posts) — owner to fill in real work.
-- Full-stack internship dates are just "2025" — owner to confirm exact months.
+- `public/resume.pdf` is older than the site: says student / ML Intern "Present" and shows phone number publicly. Owner to update.
+- ML Engineer (full-time) bullets are still generic.
 - Avatar (`src/assets/avatar.png`) is cut from the ChatGPT share preview (1200×630), so it's only ~560px source. Swap in the original full-size download if available.
 - Changes since the last commit not yet checked visually in a browser.
 - `travelplanner.png` (1.3 MB) and `chestxrayai.png` (800 KB) should be compressed / converted to WebP.

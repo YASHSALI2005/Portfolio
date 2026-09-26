@@ -14,7 +14,7 @@ export const profile = {
   github: 'https://github.com/YASHSALI2005',
   githubUser: 'YASHSALI2005',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
-  resume: '', // PDF link (e.g. /resume.pdf in public/ or a Google Drive link); nav link appears once set
+  resume: '/resume.pdf', // PDF link (e.g. /resume.pdf in public/ or a Google Drive link); nav link appears once set
   about: [
     'Machine Learning Engineer at EnPointe IT Services, building AI and Generative AI solutions.',
     'Started out in full-stack web development, so I ship models end to end — from data and training to APIs and UI.',
@@ -36,15 +36,20 @@ export const experiences = [
     title: 'Machine Learning Intern',
     company: 'EnPointe IT Services Pvt. Ltd.',
     date: 'Feb 2026 — Jun 2026',
-    points: ['Worked on real-world, data-driven ML projects with the AI team.'],
+    points: [
+      'Built and fine-tuned custom ML models, including wake-word detection and time-series forecasting.',
+      'Built and deployed RAG pipelines that bring LLMs into existing web applications.',
+      'Automated data extraction and preprocessing to build training and validation datasets.',
+      'Worked with the full-stack team to take models from research to production APIs.',
+    ],
   },
   {
     title: 'Full-Stack Developer Intern',
     company: 'EnPointe IT Services Pvt. Ltd.',
-    date: '2025',
+    date: 'Jun 2025 — Jan 2026',
     points: [
       'Built the website side of the Vrott Dashboard and helped take it live.',
-      'Developed full-stack features with Next.js, Node.js and SQL backends, and documented the APIs behind them.',
+      'Developed full-stack features with Next.js, React, Node.js and Express, and designed the REST APIs behind them.',
       'Built reusable components and improved UI/UX and performance across modules.',
     ],
   },
@@ -55,6 +60,7 @@ export const education = {
   school: 'A. C. Patil College of Engineering, Navi Mumbai',
   date: 'Graduated 2026',
   highlights: [
+    'GPA 9.05 (Semester 6).',
     'Academic Excellence Award — 3rd rank in IT department (2024–25).',
     'IEEE paper: “Clickk: An AI-Powered Code Editor for Intelligent Debugging and Automated Error Resolution”, presented at IC3ET 2026.',
     'HACKUP 2026 — NeuralWatch, real-time UPI fraud detection; top 45 of 250+ teams.',
@@ -64,10 +70,10 @@ export const education = {
 export const projects = [
   {
     name: 'Clickk',
-    tagline: 'AI-powered code editor',
+    tagline: 'AI coding assistant on local LLMs',
     description:
       'A command-style editor that keeps your hands on the keyboard — type natural instructions, trigger workflows, and manage your workspace without clicking.',
-    tags: ['React', 'TypeScript', 'Zustand', 'shadcn/ui'],
+    tags: ['React', 'Node.js', 'Llama 3.2', 'Ollama'],
     image: clickk,
     source: 'https://github.com/YASHSALI2005/CLICKK',
     live: 'https://clickk-frontend.onrender.com/',
@@ -85,10 +91,10 @@ export const projects = [
   },
   {
     name: 'Deepfake Detection',
-    tagline: 'Video forensics pipeline',
+    tagline: '92% accurate deepfake detector',
     description:
       'Inspects uploaded video frames, extracts features and flags likely deepfakes through a streamlined web interface.',
-    tags: ['Python', 'Machine Learning'],
+    tags: ['Python', 'OpenCV', 'EfficientNet', 'CNN'],
     image: deepfake,
     source: 'https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL',
     live: 'https://deepfake-detection-model-frontendd.onrender.com/',
