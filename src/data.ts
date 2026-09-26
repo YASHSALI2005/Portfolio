@@ -1,9 +1,9 @@
 // All site content lives here — edit this file, not the components.
-import chestxrayai from './assets/chestxrayai.png';
-import clickk from './assets/clickk.jpg';
-import deepfake from './assets/deepfake.jpg';
+import chestxrayai from './assets/chestxrayai.webp';
+import clickk from './assets/clickk.webp';
+import deepfake from './assets/deepfake.webp';
 import smartHome from './assets/smart.webp';
-import travelplanner from './assets/travelplanner.png';
+import travelplanner from './assets/travelplanner.webp';
 
 export const profile = {
   name: 'Yash Sali',
@@ -61,7 +61,6 @@ export const education = {
   school: 'A. C. Patil College of Engineering, Navi Mumbai',
   date: 'Graduated 2026',
   highlights: [
-    'Academic Excellence Award — 3rd rank in IT department (2024–25).',
     'IEEE paper: “Clickk: An AI-Powered Code Editor for Intelligent Debugging and Automated Error Resolution”, presented at IC3ET 2026.',
     'HACKUP 2026 — NeuralWatch, real-time UPI fraud detection; top 45 of 250+ teams.',
   ],
@@ -75,6 +74,7 @@ export const projects = [
       'A command-style editor that keeps your hands on the keyboard — type natural instructions, trigger workflows, and manage your workspace without clicking.',
     tags: ['React', 'Node.js', 'Llama 3.2', 'Ollama'],
     image: clickk,
+    badge: '$ clickk fix --ai',
     source: 'https://github.com/YASHSALI2005/CLICKK',
     live: 'https://clickk-frontend.onrender.com/',
   },
@@ -85,6 +85,7 @@ export const projects = [
       'Upload a chest X-ray and a PyTorch DenseNet121 model flags likely conditions, with an interactive preview and threshold control.',
     tags: ['React', 'PyTorch', 'Python'],
     image: chestxrayai,
+    badge: 'DenseNet121 · threshold 0.50',
     source:
       'https://github.com/YASHSALI2005/Chest-X-Ray-Multi-Label-Disease-Classification-using-Deep-Learning',
     live: 'https://chest-x-ray-multi-label-disease.onrender.com/',
@@ -96,6 +97,7 @@ export const projects = [
       'Inspects uploaded video frames, extracts features and flags likely deepfakes through a streamlined web interface.',
     tags: ['Python', 'OpenCV', 'EfficientNet', 'CNN'],
     image: deepfake,
+    badge: '● FAKE · 92% accuracy',
     source: 'https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL',
     live: 'https://deepfake-detection-model-frontendd.onrender.com/',
   },
@@ -106,6 +108,7 @@ export const projects = [
       'Explore destinations, compare packages and send trip inquiries, backed by a Node.js + MongoDB API.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
     image: travelplanner,
+    badge: '✈ BOM → GOI',
     source: 'https://github.com/YASHSALI2005/Travel-Planner-Website',
     live: 'https://travel-planner-websitefrontend.vercel.app/',
   },
@@ -116,6 +119,7 @@ export const projects = [
       'Control lights, fans and appliances from one dashboard with automation rules, telemetry and real-time device feedback.',
     tags: ['React', 'Node.js', 'MongoDB', 'IoT'],
     image: smartHome,
+    badge: '● 6 lights on',
     source: 'https://github.com/YASHSALI2005/SMART-HOME-AUTOMATION',
   },
 ];

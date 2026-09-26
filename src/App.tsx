@@ -125,13 +125,17 @@ const App = () => (
               key={p.name}
               className="group overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900/50 transition hover:border-neutral-600"
             >
-              <div className="aspect-video overflow-hidden bg-neutral-900">
+              <div className="relative aspect-video overflow-hidden bg-neutral-900">
                 <img
                   src={p.image}
                   alt={`${p.name} screenshot`}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
                 />
+                {/* Themed label per project — text comes from `badge` in data.ts. */}
+                <span className="absolute bottom-3 left-3 rounded-md border border-white/10 bg-black/70 px-2 py-1 font-mono text-xs text-neutral-100 backdrop-blur">
+                  {p.badge}
+                </span>
               </div>
               <div className="space-y-3 p-5">
                 <div>
