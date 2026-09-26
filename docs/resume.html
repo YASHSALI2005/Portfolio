@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Yash Sali — Resume</title>
+<style>
+  @page { size: A4; margin: 10mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Times New Roman", Georgia, serif; font-size: 10.2pt; line-height: 1.24; color: #111; margin: 0; }
+  h1 { font-size: 22pt; text-align: center; margin: 0; letter-spacing: 0.5px; }
+  .contact { text-align: center; font-size: 10pt; margin: 3px 0 2px; }
+  .contact a { color: #1a0dab; text-decoration: none; }
+  h2 { font-size: 11.5pt; text-transform: uppercase; margin: 8px 0 3px; padding-bottom: 2px; border-bottom: 1.2px solid #111; letter-spacing: 0.5px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .row b { font-weight: bold; }
+  .item { margin-bottom: 4px; }
+  .sub { font-style: italic; }
+  ul { margin: 2px 0 0; padding-left: 16px; }
+  li { margin: 1px 0; }
+  p { margin: 0; }
+  .skills div { margin: 1px 0; }
+  a { color: #1a0dab; text-decoration: none; }
+</style>
+</head>
+<body>
+  <h1>YASH RAJESH SALI</h1>
+  <div class="contact">
+    Mumbai, Maharashtra, India<!--PHONE--> | salirajesh7@gmail.com |
+    <a href="https://www.yashsali.me">yashsali.me</a> |
+    <a href="https://github.com/YASHSALI2005">github.com/YASHSALI2005</a> |
+    <a href="https://www.linkedin.com/in/yashsali05">linkedin.com/in/yashsali05</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Machine Learning Engineer at EnPointe IT Services (converted to full-time after an ML internship), building ML and GenAI systems
+  end to end: model training and fine-tuning (wake-word detection, time-series forecasting), RAG pipelines for LLM-powered web
+  applications, and the data pipelines and APIs behind them. Full-stack background; co-author of an IEEE-published paper.</p>
+
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="row"><b>Machine Learning Engineer — EnPointe IT Services Pvt. Ltd.</b><b>Jun 2026 – Present</b></div>
+    <ul>
+      <li>Offered a full-time role based on performance during the ML internship.</li>
+      <li>Building and maintaining ML and Generative AI solutions for production use.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><b>Machine Learning Intern — EnPointe IT Services Pvt. Ltd.</b><b>Feb 2026 – Jun 2026</b></div>
+    <ul>
+      <li>Engineered and fine-tuned custom machine learning models, including wake-word detection systems and time-series forecasting algorithms.</li>
+      <li>Developed and deployed Retrieval-Augmented Generation (RAG) pipelines to integrate Large Language Models (LLMs) into existing web applications.</li>
+      <li>Automated data extraction and preprocessing workflows to construct high-quality datasets for model training and validation.</li>
+      <li>Collaborated with the full-stack team to bridge AI model research and production-level API integration.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><b>Full Stack Developer Intern — EnPointe IT Services Pvt. Ltd.</b><b>Jun 2025 – Jan 2026</b></div>
+    <ul>
+      <li>Built and maintained full-stack web applications (incl. the Vrott Dashboard) with Next.js, React.js, Node.js and Express.js.</li>
+      <li>Designed RESTful APIs; worked in an Agile team with Git/GitHub, debugging and optimising for performance.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="row"><b>Clickk — AI Coding Assistant</b><b>Aug 2025 – Nov 2025</b></div>
+    <ul>
+      <li>AI coding assistant for code generation, error detection and fix suggestions: static analysis (file-structure parsing, AST checks) locates errors, and Llama 3.2 via Ollama explains and fixes them.</li>
+      <li>React.js front end with a Node.js/Express.js back end managing model calls. Published at IEEE IC3ET 2026.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><b>Deepfake Detection Model</b><b>Jan 2025 – Mar 2025</b></div>
+    <ul>
+      <li>Detects deepfake media with 92% accuracy: OpenCV frame processing and an EfficientNet CNN built on pre-trained models for facial feature analysis; served via a web interface.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><b>Chest X-Ray AI — Multi-label Disease Classification</b></div>
+    <ul>
+      <li>DenseNet121 fine-tuned in PyTorch for multi-label classification on CheXpert-style labels; web app with image upload and adjustable decision threshold.</li>
+    </ul>
+  </div>
+
+  <h2>Publication &amp; Achievements</h2>
+  <ul>
+    <li><b>IEEE:</b> “Clickk: An AI-Powered Code Editor for Intelligent Debugging and Automated Error Resolution,” IC3ET 2026 —
+      <a href="https://ieeexplore.ieee.org/document/11467195">ieeexplore.ieee.org/document/11467195</a></li>
+    <li><b>HACKUP 2026:</b> NeuralWatch, real-time UPI fraud detection (rule-based pre-filter + ML model, ~70 ms latency); shortlisted in top 45 of 250+ teams.</li>
+    <li><b>Google Cloud Study Jam 2023–24</b> (GDSC): cloud infrastructure, VMs, storage and deployment.</li>
+  </ul>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div><b>Machine Learning:</b> PyTorch, CNNs (EfficientNet, DenseNet), time-series forecasting, wake-word detection, fine-tuning, model evaluation, OpenCV</div>
+    <div><b>GenAI &amp; LLMs:</b> RAG pipelines, LLM integration, Llama 3.2 / Ollama</div>
+    <div><b>Languages &amp; Data:</b> Python, Java, JavaScript/TypeScript, SQL (MySQL), MongoDB, data extraction and preprocessing</div>
+    <div><b>Engineering:</b> Flask, REST APIs, Node.js/Express, React/Next.js, Docker, Git, Vercel, Render</div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="row"><b>A. C. Patil College of Engineering, University of Mumbai</b><b>Graduated Jun 2026</b></div>
+    <div>Bachelor of Engineering (B.E.) in Information Technology — GPA: 9.05 (Semester 6)</div>
+  </div>
+  <div class="row"><span>D. G. Tatkare College, Kolad — HSC (12th) 2022 · SSC (10th) 2020</span></div>
+</body>
+</html>
