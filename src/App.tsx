@@ -173,6 +173,17 @@ const App = () => (
             </li>
           ))}
         </ul>
+        <div className="mt-5 space-y-3">
+          {education.schooling.map(e => (
+            <div key={e.title}>
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-medium">{e.title}</h3>
+                <span className="font-mono text-xs text-neutral-500">{e.date}</span>
+              </div>
+              <p className="text-sm text-neutral-500">{e.school}</p>
+            </div>
+          ))}
+        </div>
       </Section>
 
       <Section id="github" title="GitHub activity">

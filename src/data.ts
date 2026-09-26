@@ -68,6 +68,18 @@ export const education = {
     },
     { text: 'HACKUP 2026 — NeuralWatch, real-time UPI fraud detection; top 45 of 250+ teams' },
   ],
+  schooling: [
+    {
+      title: 'HSC (12th Grade)',
+      school: 'D. G. Tatkare College, Kolad, Maharashtra',
+      date: '2022',
+    },
+    {
+      title: 'SSC (10th Grade)',
+      school: 'D. G. Tatkare College, Kolad, Maharashtra',
+      date: '2020',
+    },
+  ],
 };
 
 // Ordered strongest ML/AI work first; web projects last.
