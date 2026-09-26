@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import avatar from './assets/avatar.png';
+import DecryptedText from './bits/DecryptedText';
 import { profile } from './data';
 import { icons } from './icons';
 
@@ -13,6 +14,7 @@ const socials = [
 
 export const Hero = () => {
   const [copied, setCopied] = useState(false);
+  const reduceMotion = useReducedMotion();
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText(profile.email);
@@ -49,7 +51,18 @@ export const Hero = () => {
             {profile.name}
           </h1>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 text-neutral-400">
-            <span>{profile.role}</span>
+            {reduceMotion ? (
+              <span>{profile.role}</span>
+            ) : (
+              <DecryptedText
+                text={profile.role}
+                animateOn="view"
+                sequential
+                speed={35}
+                characters="01<>/{}[]#$%&*+=ABCDEFabcdef"
+                encryptedClassName="font-mono text-violet-400"
+              />
+            )}
             <span aria-hidden="true">·</span>
             <span>{profile.location}</span>
             <span aria-hidden="true">·</span>

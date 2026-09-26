@@ -61,3 +61,18 @@ Reasoning: Owner asked for a more creative font, a "glassy" feel on the black ba
            IntersectionObserver highlighting the section in view; all links visible on mobile (scrolls sideways).
 Rejected: Glass panels on plain black (nothing to blur, looks flat); pixel font for body text (hurts readability).
 Reverses: —
+
+## 2026-09-26 — Four React Bits effects, vendored (no new dependencies)
+Model: Opus 5.5
+Type: decision
+Reasoning: Owner asked for animations from reactbits.dev. Picked the ones that fit the dark/glass/pixel look
+           and need nothing beyond framer-motion: DecryptedText (hero role decodes on load), SpotlightCard
+           (cursor spotlight on project cards), ClickSpark (click sparks site-wide), ShinyText ("Working" badge).
+           Copied into src/bits/ (licence MIT + Commons Clause: use in a site is allowed, reselling the
+           components is not). `motion/react` imports pointed at the installed framer-motion v9.
+           Local edits: SpotlightCard default card styles removed; ClickSpark canvas made fixed/viewport-sized
+           so wrapping the whole page doesn't allocate a page-height canvas. Decrypt/shimmer are skipped when
+           the visitor prefers reduced motion.
+Rejected: WebGL backgrounds (Particles, FaultyTerminal, PixelTrail — need three/ogl, heavy on phones, clash with
+          banner video); cursor effects (clash with oneko cat); GSAP-based ones (new dependency).
+Reverses: —
