@@ -5,7 +5,7 @@ import { profile } from './data';
 const links = ['about', 'experience', 'projects', 'skills', 'contact'];
 // Shorter labels so the pill fits a phone screen without scrolling.
 const mobileLabel: Record<string, string> = { experience: 'work' };
-const desktopOnly = ['skills'];
+const desktopOnly = ['about', 'skills'];
 
 // Floating glass pill; highlights the section currently in the middle band of the viewport.
 export const Nav = () => {
@@ -26,7 +26,7 @@ export const Nav = () => {
   return (
     <header className="sticky top-4 z-20 mt-4 flex justify-center px-3 sm:px-4">
       <nav className="flex max-w-full items-center gap-0.5 overflow-x-auto rounded-full border border-white/10 bg-neutral-900/60 p-1 text-xs [scrollbar-width:none] sm:gap-1 sm:p-1.5 sm:text-sm [&::-webkit-scrollbar]:hidden shadow-lg shadow-black/40 backdrop-blur-xl">
-        <a href="#top" className="hidden px-3 font-pixel text-base text-neutral-100 sm:inline">
+        <a href="#top" className="px-2 font-pixel text-sm text-neutral-100 sm:px-3 sm:text-base">
           {profile.name.split(' ')[0]}
           <span className="text-violet-400">.</span>
         </a>
