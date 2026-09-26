@@ -3,7 +3,6 @@ import chestxrayai from './assets/chestxrayai.webp';
 import clickk from './assets/clickk.webp';
 import deepfake from './assets/deepfake.webp';
 import enpointe from './assets/enpointe.png';
-import smartHome from './assets/smart.webp';
 import travelplanner from './assets/travelplanner.webp';
 
 export const profile = {
@@ -134,17 +133,6 @@ export const projects = [
     accent: 'from-amber-200 via-sky-400 to-blue-600',
     source: 'https://github.com/YASHSALI2005/Travel-Planner-Website',
     live: 'https://travel-planner-websitefrontend.vercel.app/',
-  },
-  {
-    name: 'Smart Home Dashboard',
-    tagline: 'IoT automation',
-    description:
-      'One dashboard to control lights, fans and appliances, with automation rules, telemetry and real-time device feedback.',
-    tags: ['IoT', 'React', 'Node.js', 'MongoDB'],
-    image: smartHome,
-    badge: '● 6 lights on',
-    accent: 'from-lime-200 via-lime-400 to-fuchsia-500',
-    source: 'https://github.com/YASHSALI2005/SMART-HOME-AUTOMATION',
   },
 ];
 
