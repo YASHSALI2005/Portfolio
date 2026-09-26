@@ -76,3 +76,14 @@ Reasoning: Owner asked for animations from reactbits.dev. Picked the ones that f
 Rejected: WebGL backgrounds (Particles, FaultyTerminal, PixelTrail — need three/ogl, heavy on phones, clash with
           banner video); cursor effects (clash with oneko cat); GSAP-based ones (new dependency).
 Reverses: —
+
+## 2026-09-27 — Repository licensed "all rights reserved" to Yash Sali
+Model: Opus 5.5
+Type: approval
+Reasoning: Owner chose "all rights reserved" (over MIT-code/reserved-content, or making the repo private).
+           LICENSE previously still carried the template author's MIT notice, which let anyone reuse the
+           owner's photo, video and resume. New LICENSE reserves everything to Yash Sali and keeps the notices
+           that must be kept: Liron Abutbul's MIT notice scoped to the remaining template config files,
+           React Bits (MIT + Commons Clause) and oneko.js (MIT). package.json marked "UNLICENSED".
+Rejected: MIT for code (owner doesn't want the site cloned); private repo (recruiters can't browse the code).
+Reverses: —

@@ -1,21 +1,62 @@
-MIT License
+Copyright (c) 2026 Yash Sali. All rights reserved.
 
-Copyright (c) 2023 Liron Abutbul
+This repository contains the source code and content of https://www.yashsali.me.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+No license is granted. You may view this repository on GitHub, but you may not
+copy, modify, distribute, publish, deploy, sublicense or sell any part of it
+without prior written permission from Yash Sali (salirajesh7@gmail.com).
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This includes, without limitation: the source code and design of the site, the
+name, text and resume, the avatar and profile images, the banner video, project
+screenshots, and the EnPointe logo usage.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+The third-party components listed below are NOT covered by the notice above.
+They remain under their own licenses, reproduced as those licenses require.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY NOTICES
+--------------------------------------------------------------------------------
+
+1. Original project template
+   Files: .eslintrc.cjs, .eslintignore, .prettierrc.cjs, .prettierignore,
+          tsconfig.json, tsconfig.node.json, vite.config.js, postcss.config.cjs
+
+   MIT License
+
+   Copyright (c) 2023 Liron Abutbul
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+2. React Bits — https://reactbits.dev
+   Files: src/bits/ClickSpark.tsx, src/bits/DecryptedText.tsx,
+          src/bits/ShinyText.tsx, src/bits/SpotlightCard.tsx (locally modified)
+
+   MIT + Commons Clause License Condition v1.0
+   Copyright (c) 2026 David Haz
+   Used as part of this website, as permitted. The components themselves may not
+   be sold, sublicensed or redistributed. Full terms:
+   https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
+
+3. oneko.js — https://github.com/adryd325/oneko.js
+   Files: public/oneko/oneko.js, public/oneko/oneko.gif
+   MIT License, Copyright (c) 2022 adryd. Full text: public/oneko/LICENSE
+
+4. npm dependencies (React, framer-motion, EmailJS, react-github-calendar, etc.)
+   are installed at build time and keep their own licenses; they are not part
+   of this repository's source.

@@ -2,7 +2,7 @@
 
 Minimal single-page developer portfolio. React 18 + TypeScript + Vite + Tailwind + Framer Motion.
 
-**Live:** https://portfolio-new-mocha-eight.vercel.app/
+**Live:** https://www.yashsali.me
 
 ## Run
 
@@ -27,3 +27,9 @@ All text, projects, experience and skills live in `src/data.ts`. Project screens
 ## Project docs
 
 Read `HANDOVER.md` first, then `ARCHITECTURE.md`, `DECISIONS.md` and `CONSTRAINTS.md`.
+
+## License
+
+© 2026 Yash Sali. All rights reserved — the code and content here may not be copied or reused
+without permission. Third-party pieces (original template config, React Bits, oneko.js) keep
+their own licenses; see [LICENSE](LICENSE).
