@@ -6,6 +6,11 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yash Sali — Machine Learning Engineer</title>
+    <link rel="canonical" href="https://www.yashsali.me/" />
+    <meta name="author" content="Yash Sali" />
+    <meta name="robots" content="index, follow" />
+    <!-- Google ignores meta keywords; kept for Bing/others. Ranking comes from the title, h1, text and schema below. -->
+    <meta name="keywords" content="Yash Sali, Yash Rajesh Sali, Yash Sali portfolio, Yash Sali Machine Learning Engineer, Yash Sali ML Engineer, Yash Sali EnPointe, Yash Sali Mumbai, Yash Sali IEEE, Clickk AI code editor, Machine Learning Engineer Mumbai, GenAI, RAG, LLM" />
     <meta name="description" content="Yash Sali — Machine Learning Engineer building production ML and GenAI systems: RAG pipelines, forecasting, computer vision and the APIs behind them." />
     <!-- Link previews (LinkedIn, WhatsApp, X). Image URL must be absolute. -->
     <meta property="og:type" content="website" />
@@ -16,9 +21,64 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="Yash Sali" />
+    <!-- Structured data: tells Google this site is the person Yash Sali and links his other profiles. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://www.yashsali.me/#person",
+            "name": "Yash Sali",
+            "alternateName": ["Yash Rajesh Sali", "yashsali"],
+            "url": "https://www.yashsali.me/",
+            "image": "https://www.yashsali.me/og.jpg",
+            "jobTitle": "Machine Learning Engineer",
+            "worksFor": { "@type": "Organization", "name": "EnPointe IT Services Pvt. Ltd." },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "A. C. Patil College of Engineering, University of Mumbai" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+            "email": "mailto:salirajesh7@gmail.com",
+            "knowsAbout": ["Machine Learning", "Generative AI", "Retrieval-Augmented Generation", "Large Language Models", "Time-series forecasting", "Computer Vision", "PyTorch", "Python"],
+            "sameAs": [
+              "https://www.linkedin.com/in/yashsali05",
+              "https://github.com/YASHSALI2005"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.yashsali.me/#website",
+            "url": "https://www.yashsali.me/",
+            "name": "Yash Sali",
+            "about": { "@id": "https://www.yashsali.me/#person" }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "headline": "Clickk: An AI-Powered Code Editor for Intelligent Debugging and Automated Error Resolution",
+            "url": "https://ieeexplore.ieee.org/document/11467195",
+            "author": [{ "@id": "https://www.yashsali.me/#person" }, { "@type": "Person", "name": "Tejas Nikam" }, { "@type": "Person", "name": "Rutika Devkar" }, { "@type": "Person", "name": "Varsha Bhole" }]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-neutral-950 font-sans text-neutral-100 antialiased selection:bg-neutral-700">
-    <div id="root"></div>
+    <div id="root">
+      <main class="mx-auto max-w-3xl px-6 py-20">
+        <h1 class="text-4xl">Yash Sali</h1>
+        <p>Machine Learning Engineer at EnPointe IT Services · Mumbai, India</p>
+        <p>
+          I build production ML and GenAI systems: RAG pipelines, time-series forecasting, wake-word detection and computer
+          vision, plus the APIs they run behind. Co-author of the IEEE paper “Clickk: An AI-Powered Code Editor for
+          Intelligent Debugging and Automated Error Resolution” (IC3ET 2026).
+        </p>
+        <p>
+          <a href="https://github.com/YASHSALI2005">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/yashsali05">LinkedIn</a> ·
+          <a href="/Yash-Sali-Resume.pdf">Resume</a>
+        </p>
+      </main>
+    </div>
     <!-- Cat that chases the cursor — vendored from adryd325/oneko.js (MIT, see public/oneko/LICENSE) -->
     <script src="/oneko/oneko.js" data-cat="/oneko/oneko.gif"></script>
     <script type="module" src="/src/main.tsx"></script>

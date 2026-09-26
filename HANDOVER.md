@@ -17,6 +17,11 @@
 - Vercel project `portfolio-new`: `www.yashsali.me` serves Production; `yashsali.me` 308-redirects to www.
 - Namecheap DNS: A `@` → 216.198.79.1, CNAME `www` → e0b5eb0cfb4b45e9.vercel-dns-017.com.
 
+## SEO
+- `index.html`: canonical, keywords, Person/WebSite/ScholarlyArticle JSON-LD, static fallback text inside `#root` (React replaces it). Keep fallback text in sync with `src/data.ts`.
+- `public/robots.txt` + `public/sitemap.xml` — bump `<lastmod>` on big content changes.
+- Owner to do: verify site in Google Search Console and submit the sitemap; set yashsali.me as the Website on GitHub profile.
+
 ## Watch for
 - Before 2027-09-26: renew `yashsali.me` (paid) or it lapses.
 - The GitHub calendar fetches from a third-party API (`github-contributions-api.jogruber.de`, via `react-github-calendar`). If it's down, that section shows an error message; the rest of the page is unaffected.
