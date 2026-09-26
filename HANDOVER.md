@@ -16,11 +16,12 @@
 - `yashsali.me` — Namecheap account `Yashsali12`, free via GitHub Student Pack (claimed through GitHub account `yashsali1`). Expires **2027-09-26**, auto-renew OFF.
 - Vercel project `portfolio-new`: `www.yashsali.me` serves Production; `yashsali.me` 308-redirects to www.
 - Namecheap DNS: A `@` → 216.198.79.1, CNAME `www` → e0b5eb0cfb4b45e9.vercel-dns-017.com.
+- Namecheap DNS also has TXT `@` = `google-site-verification=…` (Search Console). Don't delete it — Google re-checks and would drop verification.
 
 ## SEO
 - `index.html`: canonical, keywords, Person/WebSite/ScholarlyArticle JSON-LD, static fallback text inside `#root` (React replaces it). Keep fallback text in sync with `src/data.ts`.
 - `public/robots.txt` + `public/sitemap.xml` — bump `<lastmod>` on big content changes.
-- Owner to do: verify site in Google Search Console and submit the sitemap; set yashsali.me as the Website on GitHub profile.
+- Search Console TXT record added 2026-09-27. Owner to do: click Verify, submit sitemap; set yashsali.me as the Website on GitHub profile.
 
 ## Watch for
 - Before 2027-09-26: renew `yashsali.me` (paid) or it lapses.
