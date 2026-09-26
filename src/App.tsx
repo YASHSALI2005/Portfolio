@@ -76,9 +76,13 @@ const App = () => (
         <div className="space-y-6">
           {experiences.map(exp => (
             <article key={exp.title} className="flex gap-4">
-              {/* Monogram stands in for a company logo. */}
+              {/* Company logo, or its first letter when no logo is set in data.ts. */}
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-neutral-800 bg-neutral-900 font-display font-bold text-neutral-300">
-                {exp.company[0]}
+                {exp.logo ? (
+                  <img src={exp.logo} alt={`${exp.company} logo`} className="h-6 w-6" />
+                ) : (
+                  exp.company[0]
+                )}
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center justify-between gap-x-3">

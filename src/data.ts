@@ -2,6 +2,7 @@
 import chestxrayai from './assets/chestxrayai.webp';
 import clickk from './assets/clickk.webp';
 import deepfake from './assets/deepfake.webp';
+import enpointe from './assets/enpointe.png';
 import smartHome from './assets/smart.webp';
 import travelplanner from './assets/travelplanner.webp';
 
@@ -27,6 +28,7 @@ export const experiences = [
   {
     title: 'Machine Learning Engineer',
     company: 'EnPointe IT Services Pvt. Ltd.',
+    logo: enpointe,
     date: 'Jun 2026 — Present',
     points: [
       'Full-time role offered on the strength of my internship work.',
@@ -36,6 +38,7 @@ export const experiences = [
   {
     title: 'Machine Learning Intern',
     company: 'EnPointe IT Services Pvt. Ltd.',
+    logo: enpointe,
     date: 'Feb 2026 — Jun 2026',
     points: [
       'Built and fine-tuned custom ML models, including wake-word detection and time-series forecasting.',
@@ -47,6 +50,7 @@ export const experiences = [
   {
     title: 'Full-Stack Developer Intern',
     company: 'EnPointe IT Services Pvt. Ltd.',
+    logo: enpointe,
     date: 'Jun 2025 — Jan 2026',
     points: [
       'Built the website side of the Vrott Dashboard and helped take it live.',
