@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 
 import { profile } from './data';
 
-const links = ['about', 'experience', 'projects', 'skills', 'contact'];
+const links = ['experience', 'projects', 'skills', 'contact'];
 // Shorter labels so the pill fits a phone screen without scrolling.
 const mobileLabel: Record<string, string> = { experience: 'work' };
-const desktopOnly = ['about', 'skills'];
+const desktopOnly = ['skills'];
 
 // Floating glass pill; highlights the section currently in the middle band of the viewport.
 export const Nav = () => {

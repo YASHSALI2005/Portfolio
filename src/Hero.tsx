@@ -122,6 +122,23 @@ export const Hero = () => {
         <cite className="not-italic text-neutral-400">{profile.quote.by}</cite>
       </blockquote>
 
+      {/* Primary actions for recruiters: resume in one click, then contact. */}
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <a
+          href={profile.resume}
+          download="Yash-Sali-Resume.pdf"
+          className="rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-950 transition hover:bg-white"
+        >
+          Download resume
+        </a>
+        <a
+          href="#contact"
+          className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-neutral-100 backdrop-blur transition hover:bg-white/10"
+        >
+          Contact me
+        </a>
+      </div>
+
       <div className="mt-6 flex gap-4">
         {socials.map(s => (
           <a

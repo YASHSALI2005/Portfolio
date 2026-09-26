@@ -47,17 +47,6 @@ const App = () => (
     <main id="top" className="mx-auto max-w-3xl px-6">
       <Hero />
 
-      <Section id="about" title="About">
-        <ul className="space-y-2 text-neutral-300">
-          {profile.about.map(line => (
-            <li key={line} className="flex gap-3">
-              <span className="text-neutral-600">—</span>
-              {line}
-            </li>
-          ))}
-        </ul>
-      </Section>
-
       <Section id="experience" title="Experience">
         <div className="space-y-6">
           {experiences.map(exp => (
@@ -93,19 +82,6 @@ const App = () => (
             </article>
           ))}
         </div>
-      </Section>
-
-      <Section id="education" title="Education">
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 className="font-medium">{education.degree}</h3>
-          <span className="font-mono text-xs text-neutral-500">{education.date}</span>
-        </div>
-        <p className="text-sm text-neutral-500">{education.school}</p>
-        <ul className="mt-3 list-disc space-y-1 pl-4 text-sm text-neutral-400">
-          {education.highlights.map(h => (
-            <li key={h}>{h}</li>
-          ))}
-        </ul>
       </Section>
 
       <Section id="projects" title="Projects">
@@ -144,6 +120,11 @@ const App = () => (
                       Live ↗
                     </a>
                   )}
+                  {p.paper && (
+                    <a href={p.paper} target="_blank" rel="noreferrer" className={link}>
+                      Paper ↗
+                    </a>
+                  )}
                   <a href={p.source} target="_blank" rel="noreferrer" className={link}>
                     Code ↗
                   </a>
@@ -157,7 +138,7 @@ const App = () => (
       <Section id="skills" title="Skills">
         <dl className="space-y-4">
           {Object.entries(skills).map(([group, items]) => (
-            <div key={group} className="grid gap-2 sm:grid-cols-[8rem_1fr]">
+            <div key={group} className="grid gap-2 sm:grid-cols-[9.5rem_1fr]">
               <dt className="font-mono text-xs uppercase tracking-widest text-neutral-500 sm:pt-1">
                 {group}
               </dt>
@@ -169,6 +150,27 @@ const App = () => (
             </div>
           ))}
         </dl>
+      </Section>
+
+      <Section id="education" title="Education">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 className="font-medium">{education.degree}</h3>
+          <span className="font-mono text-xs text-neutral-500">{education.date}</span>
+        </div>
+        <p className="text-sm text-neutral-500">{education.school}</p>
+        <ul className="mt-3 list-disc space-y-1 pl-4 text-sm text-neutral-400">
+          {education.highlights.map(h => (
+            <li key={h.text}>
+              {h.href ? (
+                <a href={h.href} target="_blank" rel="noreferrer" className={link}>
+                  {h.text} ↗
+                </a>
+              ) : (
+                h.text
+              )}
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section id="github" title="GitHub activity">
@@ -185,7 +187,8 @@ const App = () => (
 
       <Section id="contact" title="Let's talk">
         <p className="mb-6 text-neutral-400">
-          Open to internships, freelance work and interesting collaborations.
+          Hiring for an ML, GenAI or AI engineering role — or have a hard problem worth modelling?
+          I'd like to hear about it.
         </p>
         <Contact />
       </Section>

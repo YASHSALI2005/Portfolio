@@ -7,12 +7,13 @@
 - All real content moved to `src/data.ts`; placeholder testimonials from the template dropped.
 - `npm run build` and `npm run lint` pass; checked visually in Chrome via `vite preview`.
 
-## Open
-- `public/resume.pdf` is older than the site: says student / ML Intern "Present" and shows phone number publicly. Owner to update.
-- ML Engineer (full-time) bullets are still generic.
-- Avatar (`src/assets/avatar.png`) is cut from the ChatGPT share preview (1200×630), so it's only ~560px source. Swap in the original full-size download if available.
-- `travelplanner.png` (1.3 MB) and `chestxrayai.png` (800 KB) should be compressed / converted to WebP.
-- Contact form not tested end-to-end (needs the EmailJS env vars locally).
+## Open (owner input needed — from recruiter-style review 2026-09-26)
+- ML Engineer (full-time) bullets in `src/data.ts` are generic — need 2–3 concrete ones with a result.
+- `public/resume.pdf` is outdated (says student / ML Intern "Present", no full-time role) and shows phone number.
+- Contact form broken until Gmail is reconnected in the EmailJS dashboard ("Invalid grant").
+- Chest X-Ray card has no metric — add its macro-F1 / AUC if known.
+- Render free-tier demos (Clickk, Deepfake, Chest X-Ray) sleep; first visit can take 1–2 min.
+- `README.md` still mentions the old live URL; point it at https://www.yashsali.me.
 
 ## Domain
 - `yashsali.me` — Namecheap account `Yashsali12`, free via GitHub Student Pack (claimed through GitHub account `yashsali1`). Expires **2027-09-26**, auto-renew OFF.
