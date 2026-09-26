@@ -27,3 +27,15 @@ Reasoning: The 3D desktop/planet scenes were the template's signature and severa
            Rollback: `git checkout main` — the old site is untouched there.
 Rejected: Keeping a small 3D element — clashes with the minimal look.
 Reverses: —
+
+## 2026-09-26 — Cat cursor via vendored oneko.js; pixel avatar generated from own photo
+Model: Opus 5.5
+Type: decision
+Reasoning: Owner asked for a cat that runs after the mouse. oneko.js (adryd325, MIT) is the standard
+           one; vendored into public/oneko/ with its LICENSE instead of adding an npm dep. It already
+           disables itself under prefers-reduced-motion.
+           Avatar: owner supplied a reference pixel avatar but asked not to use it as-is. Generated one
+           from their own GitHub photo (crop → 36px → 12 colours → yellow disc) with a one-off Pillow
+           script; not kept in the repo since it only runs once.
+Rejected: Using the reference image (not the owner's likeness); hand-rolled cat animation (oneko exists).
+Reverses: —
