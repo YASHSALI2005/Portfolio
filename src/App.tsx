@@ -5,6 +5,7 @@ import { GitHubCalendar } from 'react-github-calendar';
 import { Contact } from './Contact';
 import { education, experiences, profile, projects, skills } from './data';
 import { Hero } from './Hero';
+import { icons } from './icons';
 import { Nav } from './Nav';
 
 // Every section fades up once as it scrolls into view.
@@ -89,45 +90,73 @@ const App = () => (
           {projects.map(p => (
             <article
               key={p.name}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
+              className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-3 backdrop-blur-md transition hover:border-white/20 hover:bg-white/[0.05]"
             >
-              <div className="relative aspect-video overflow-hidden bg-neutral-900">
+              {/* Screenshot set into a gradient like a device mockup; the whole image opens the site. */}
+              <motion.a
+                href={p.live ?? p.source}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open ${p.name}`}
+                whileHover={{ scale: 1.015 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                className={`relative block aspect-[16/10] overflow-hidden rounded-xl bg-gradient-to-br ${p.accent}`}
+              >
+                <span className="absolute left-3 top-3 z-10 rounded-md border border-white/20 bg-black/60 px-2 py-1 font-mono text-[11px] text-neutral-100 backdrop-blur">
+                  {p.badge}
+                </span>
                 <img
                   src={p.image}
                   alt={`${p.name} screenshot`}
                   loading="lazy"
-                  className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                  className="absolute left-[9%] top-[17%] w-[96%] rounded-tl-lg shadow-2xl shadow-black/50 ring-1 ring-black/20 transition duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2"
                 />
-                {/* Themed label per project — text comes from `badge` in data.ts. */}
-                <span className="absolute bottom-3 left-3 rounded-md border border-white/10 bg-black/70 px-2 py-1 font-mono text-xs text-neutral-100 backdrop-blur">
-                  {p.badge}
-                </span>
-              </div>
-              <div className="space-y-3 p-5">
-                <div>
-                  <h3 className="font-medium">{p.name}</h3>
-                  <p className="text-sm text-neutral-500">{p.tagline}</p>
-                </div>
-                <p className="text-sm text-neutral-400">{p.description}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {p.tags.map(t => (
-                    <Tag key={t}>{t}</Tag>
-                  ))}
-                </div>
-                <div className="flex gap-4 pt-1 text-sm">
+              </motion.a>
+
+              <div className="flex flex-1 flex-col px-1.5 pb-1 pt-4">
+                <div className="flex items-center justify-between gap-3">
+                  <h3 className="font-display text-lg font-bold">{p.name}</h3>
                   {p.live && (
-                    <a href={p.live} target="_blank" rel="noreferrer" className={link}>
-                      Live ↗
-                    </a>
+                    <span className="flex shrink-0 items-center gap-1.5 text-xs text-neutral-400">
+                      <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                      </span>
+                      Live
+                    </span>
                   )}
-                  {p.paper && (
-                    <a href={p.paper} target="_blank" rel="noreferrer" className={link}>
-                      Paper ↗
-                    </a>
-                  )}
-                  <a href={p.source} target="_blank" rel="noreferrer" className={link}>
-                    Code ↗
-                  </a>
+                </div>
+                <p className="text-sm text-neutral-500">{p.tagline}</p>
+                <p className="mt-3 text-sm text-neutral-400">{p.description}</p>
+                <div className="mt-auto flex items-end justify-between gap-3 pt-4">
+                  <div className="flex flex-wrap gap-1.5">
+                    {p.tags.map(t => (
+                      <Tag key={t}>{t}</Tag>
+                    ))}
+                  </div>
+                  <div className="flex shrink-0 gap-3 text-neutral-500">
+                    {[
+                      { href: p.live, label: 'Website', icon: icons.globe },
+                      { href: p.paper, label: 'Paper', icon: icons.paper },
+                      { href: p.source, label: 'Code', icon: icons.github },
+                    ].map(
+                      l =>
+                        l.href && (
+                          <a
+                            key={l.label}
+                            href={l.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`${p.name} ${l.label}`}
+                            title={l.label}
+                            className="transition hover:text-neutral-100"
+                          >
+                            {l.icon}
+                          </a>
+                        )
+                    )}
+                  </div>
                 </div>
               </div>
             </article>
