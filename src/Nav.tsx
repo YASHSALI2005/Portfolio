@@ -25,8 +25,11 @@ export const Nav = () => {
 
   return (
     <header className="sticky top-4 z-20 mt-4 flex justify-center px-3 sm:px-4">
-      <nav className="flex max-w-full items-center gap-0.5 overflow-x-auto rounded-full border border-white/10 bg-neutral-900/60 p-1 text-xs [scrollbar-width:none] sm:gap-1 sm:p-1.5 sm:text-sm [&::-webkit-scrollbar]:hidden shadow-lg shadow-black/40 backdrop-blur-xl">
-        <a href="#top" className="px-2 font-pixel text-sm text-neutral-100 sm:px-3 sm:text-base">
+      <nav className="flex max-w-full items-center gap-0.5 overflow-x-auto rounded-full border border-white/10 bg-neutral-900/60 p-1 text-xs [scrollbar-width:none] min-[408px]:gap-1 min-[408px]:p-1.5 min-[408px]:text-sm [&::-webkit-scrollbar]:hidden shadow-lg shadow-black/40 backdrop-blur-xl">
+        <a
+          href="#top"
+          className="px-2 font-pixel text-sm text-neutral-100 min-[408px]:px-2.5 min-[408px]:text-base sm:px-3"
+        >
           {profile.name.split(' ')[0]}
           <span className="text-violet-400">.</span>
         </a>
@@ -34,7 +37,7 @@ export const Nav = () => {
           <a
             key={id}
             href={`#${id}`}
-            className={`whitespace-nowrap rounded-full px-2 py-1.5 capitalize transition sm:px-3 ${
+            className={`whitespace-nowrap rounded-full px-2 py-1.5 capitalize transition min-[408px]:px-2.5 min-[408px]:py-2 sm:px-3 ${
               desktopOnly.includes(id) ? 'hidden sm:inline' : ''
             } ${
               active === id
@@ -51,7 +54,7 @@ export const Nav = () => {
             href={profile.resume}
             target="_blank"
             rel="noreferrer"
-            className="whitespace-nowrap rounded-full bg-neutral-100 px-2 py-1.5 font-medium sm:px-3 text-neutral-950 transition hover:bg-white"
+            className="whitespace-nowrap rounded-full bg-neutral-100 px-2 py-1.5 font-medium min-[408px]:px-2.5 min-[408px]:py-2 sm:px-3 text-neutral-950 transition hover:bg-white"
           >
             Resume
           </a>
