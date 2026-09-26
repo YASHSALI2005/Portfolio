@@ -105,6 +105,12 @@ export const Hero = () => {
 
       <p className="mt-8 text-neutral-300">{profile.tagline}</p>
 
+      <blockquote className="mt-4 flex flex-wrap items-center gap-x-2 text-sm text-neutral-500">
+        <span className="italic">“{profile.quote.text}”</span>
+        <span aria-hidden="true">—</span>
+        <cite className="not-italic text-neutral-400">{profile.quote.by}</cite>
+      </blockquote>
+
       <div className="mt-6 flex gap-4">
         {socials.map(s => (
           <a

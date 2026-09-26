@@ -9,6 +9,7 @@ export const profile = {
   name: 'Yash Sali',
   role: 'Machine Learning Engineer',
   location: 'Mumbai',
+  quote: { text: 'The best way to predict the future is to invent it.', by: 'Alan Kay' },
   tagline: 'I build intelligent systems, end to end — from models to the apps around them.',
   email: 'salirajesh7@gmail.com',
   github: 'https://github.com/YASHSALI2005',
@@ -60,7 +61,6 @@ export const education = {
   school: 'A. C. Patil College of Engineering, Navi Mumbai',
   date: 'Graduated 2026',
   highlights: [
-    'GPA 9.05 (Semester 6).',
     'Academic Excellence Award — 3rd rank in IT department (2024–25).',
     'IEEE paper: “Clickk: An AI-Powered Code Editor for Intelligent Debugging and Automated Error Resolution”, presented at IC3ET 2026.',
     'HACKUP 2026 — NeuralWatch, real-time UPI fraud detection; top 45 of 250+ teams.',
