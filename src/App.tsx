@@ -2,9 +2,9 @@ import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { GitHubCalendar } from 'react-github-calendar';
 
-import avatar from './assets/avatar.png';
 import { Contact } from './Contact';
 import { education, experiences, profile, projects, skills } from './data';
+import { Hero } from './Hero';
 
 const nav = ['about', 'experience', 'projects', 'skills', 'contact'];
 
@@ -54,33 +54,7 @@ const App = () => (
     </header>
 
     <main id="top" className="mx-auto max-w-3xl px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="pb-8 pt-20 sm:pt-28"
-      >
-        <img src={avatar} alt={`${profile.name} avatar`} className="mb-8 h-28 w-28" />
-        <p className="mb-4 font-mono text-xs uppercase tracking-widest text-neutral-500">
-          {profile.role} · {profile.location}
-        </p>
-        <h1 className="font-serif text-5xl leading-tight sm:text-6xl">
-          Hi, I'm {profile.name}.
-          <br />
-          <span className="italic text-neutral-400">I build intelligent systems, end to end.</span>
-        </h1>
-        <div className="mt-8 flex flex-wrap gap-5 text-sm">
-          <a href={profile.github} target="_blank" rel="noreferrer" className={link}>
-            GitHub ↗
-          </a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" className={link}>
-            LinkedIn ↗
-          </a>
-          <a href={`mailto:${profile.email}`} className={link}>
-            Email ↗
-          </a>
-        </div>
-      </motion.div>
+      <Hero />
 
       <Section id="about" title="About">
         <ul className="space-y-2 text-neutral-300">

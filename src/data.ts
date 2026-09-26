@@ -8,7 +8,8 @@ import travelplanner from './assets/travelplanner.png';
 export const profile = {
   name: 'Yash Sali',
   role: 'Machine Learning Engineer',
-  location: 'Mumbai, India',
+  location: 'Mumbai',
+  tagline: 'I build intelligent systems, end to end — from models to the apps around them.',
   email: 'salirajesh7@gmail.com',
   github: 'https://github.com/YASHSALI2005',
   githubUser: 'YASHSALI2005',
