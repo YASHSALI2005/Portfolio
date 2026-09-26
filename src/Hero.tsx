@@ -82,7 +82,9 @@ export const Hero = () => {
           className="h-24 w-24 shrink-0 rounded-full sm:h-28 sm:w-28"
         />
         <div>
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{profile.name}</h1>
+          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+            {profile.name}
+          </h1>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 text-neutral-400">
             <span>{profile.role}</span>
             <span aria-hidden="true">·</span>

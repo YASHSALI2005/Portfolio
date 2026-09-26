@@ -8,6 +8,7 @@
 - `npm run build` and `npm run lint` pass; checked visually in Chrome via `vite preview`.
 
 ## Open
+- Resume link hidden until `profile.resume` is set in `src/data.ts`.
 - Experience bullets for the ML roles are thin (written from LinkedIn posts) — owner to fill in real work.
 - Full-stack internship dates are just "2025" — owner to confirm exact months.
 - Avatar (`src/assets/avatar.png`) is cut from the ChatGPT share preview (1200×630), so it's only ~560px source. Swap in the original full-size download if available.

@@ -18,7 +18,7 @@ const Section = ({ id, title, children }: { id: string; title: string; children:
     transition={{ duration: 0.5, ease: 'easeOut' }}
     className="scroll-mt-24 py-12"
   >
-    <h2 className="mb-6 font-serif text-3xl italic text-neutral-200">{title}</h2>
+    <h2 className="mb-6 font-display text-xl font-semibold text-neutral-100">{title}</h2>
     {children}
   </motion.section>
 );
@@ -36,7 +36,7 @@ const App = () => (
   <>
     <header className="sticky top-0 z-10 border-b border-neutral-900 bg-neutral-950/80 backdrop-blur">
       <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4 text-sm">
-        <a href="#top" className="font-serif text-xl">
+        <a href="#top" className="font-display text-lg font-bold">
           {profile.name.split(' ')[0]}
           <span className="text-neutral-500">.</span>
         </a>
@@ -49,6 +49,11 @@ const App = () => (
           <a href="#contact" className={`${link} sm:hidden`}>
             Contact
           </a>
+          {profile.resume && (
+            <a href={profile.resume} target="_blank" rel="noreferrer" className={link}>
+              Resume
+            </a>
+          )}
         </div>
       </nav>
     </header>
@@ -68,19 +73,33 @@ const App = () => (
       </Section>
 
       <Section id="experience" title="Experience">
-        <div className="space-y-8">
+        <div className="space-y-6">
           {experiences.map(exp => (
-            <article key={exp.title} className="border-l border-neutral-800 pl-5">
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-medium">{exp.title}</h3>
-                <span className="font-mono text-xs text-neutral-500">{exp.date}</span>
+            <article key={exp.title} className="flex gap-4">
+              {/* Monogram stands in for a company logo. */}
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-neutral-800 bg-neutral-900 font-display font-bold text-neutral-300">
+                {exp.company[0]}
               </div>
-              <p className="text-sm text-neutral-500">{exp.company}</p>
-              <ul className="mt-3 list-disc space-y-1 pl-4 text-sm text-neutral-400">
-                {exp.points.map(p => (
-                  <li key={p}>{p}</li>
-                ))}
-              </ul>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center justify-between gap-x-3">
+                  <h3 className="flex items-center gap-2 font-medium">
+                    {exp.company}
+                    {exp.date.endsWith('Present') && (
+                      <span className="flex items-center gap-1.5 rounded-full border border-emerald-900 bg-emerald-950 px-2 py-0.5 text-xs text-emerald-400">
+                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                        Working
+                      </span>
+                    )}
+                  </h3>
+                  <span className="font-mono text-xs text-neutral-500">{exp.date}</span>
+                </div>
+                <p className="text-sm text-neutral-400">{exp.title}</p>
+                <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-neutral-500">
+                  {exp.points.map(p => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
         </div>

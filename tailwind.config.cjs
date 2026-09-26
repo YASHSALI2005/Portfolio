@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        serif: ['"Instrument Serif"', "serif"],
-        mono: ['"JetBrains Mono"', "monospace"],
+        sans: ["Geist", "sans-serif"],
+        display: ['"Hanken Grotesk"', "sans-serif"],
+        mono: ['"Geist Mono"', "monospace"],
       },
     },
   },

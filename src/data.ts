@@ -14,6 +14,7 @@ export const profile = {
   github: 'https://github.com/YASHSALI2005',
   githubUser: 'YASHSALI2005',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
+  resume: '', // PDF link (e.g. /resume.pdf in public/ or a Google Drive link); nav link appears once set
   about: [
     'Machine Learning Engineer at EnPointe IT Services, building AI and Generative AI solutions.',
     'Started out in full-stack web development, so I ship models end to end — from data and training to APIs and UI.',

@@ -39,3 +39,13 @@ Reasoning: Owner asked for a cat that runs after the mouse. oneko.js (adryd325, 
            script; not kept in the repo since it only runs once.
 Rejected: Using the reference image (not the owner's likeness); hand-rolled cat animation (oneko exists).
 Reverses: —
+
+## 2026-09-26 — Switched from serif editorial look to ramx.in-style sans
+Model: Opus 5.5
+Type: reversal
+Reasoning: Owner preferred ramx.in's look. Headings now Hanken Grotesk, body Geist, details Geist Mono;
+           experience shown as compact company rows with a "Working" badge. Layout ideas only —
+           ramx.in is "All rights reserved", no code or text copied.
+           Deferred: blog / gears / books pages, Ctrl+K palette, light theme, Spotify "Last played".
+Rejected: Keeping Instrument Serif headings (animeshh.me look).
+Reverses: 2026-09-26 — Rebuild as minimal single-page site (visual style only; stack unchanged)
