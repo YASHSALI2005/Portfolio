@@ -75,6 +75,17 @@ export const Hero = () => {
       transition={{ duration: 0.6 }}
       className="pb-4 pt-10 sm:pt-14"
     >
+      {/* Decorative banner; muted + playsInline are required for autoplay on mobile. */}
+      <video
+        src="/banner.mp4"
+        poster="/banner.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+        className="mb-8 aspect-[1440/528] w-full rounded-xl border border-neutral-800 object-cover"
+      />
       <div className="flex items-center gap-5">
         <img
           src={avatar}
