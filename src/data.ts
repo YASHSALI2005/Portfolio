@@ -29,6 +29,7 @@ export const experiences = [
     points: [
       'Full-time role offered on the strength of my internship work.',
       'Building AI / ML and Generative AI solutions for production use.',
+      'Owning work end to end — from data and model development to the APIs that serve models.',
     ],
   },
   {
@@ -39,8 +40,7 @@ export const experiences = [
     points: [
       'Built and fine-tuned custom ML models, including wake-word detection and time-series forecasting.',
       'Built and deployed RAG pipelines that bring LLMs into existing web applications.',
-      'Automated data extraction and preprocessing to build training and validation datasets.',
-      'Worked with the full-stack team to take models from research to production APIs.',
+      'Automated data extraction and preprocessing for training datasets, and worked with the full-stack team to take models to production APIs.',
     ],
   },
   {
