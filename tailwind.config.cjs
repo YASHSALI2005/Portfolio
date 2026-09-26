@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Geist", "sans-serif"],
-        display: ['"Hanken Grotesk"', "sans-serif"],
+        display: ['"Bricolage Grotesque"', "sans-serif"],
+        pixel: ['"Pixelify Sans"', "monospace"],
         mono: ['"Geist Mono"', "monospace"],
       },
     },

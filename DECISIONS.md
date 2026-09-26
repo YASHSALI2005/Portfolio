@@ -49,3 +49,15 @@ Reasoning: Owner preferred ramx.in's look. Headings now Hanken Grotesk, body Gei
            Deferred: blog / gears / books pages, Ctrl+K palette, light theme, Spotify "Last played".
 Rejected: Keeping Instrument Serif headings (animeshh.me look).
 Reverses: 2026-09-26 — Rebuild as minimal single-page site (visual style only; stack unchanged)
+
+## 2026-09-26 — Glass look, Bricolage Grotesque headings, floating pill nav
+Model: Opus 5.5
+Type: decision
+Reasoning: Owner asked for a more creative font, a "glassy" feel on the black background, and a better navbar.
+           Glass needs colour behind it to blur, so three fixed, heavily blurred violet/blue/fuchsia glows
+           (night-sky palette from the banner video) sit behind the page; cards, tags, logo boxes and form
+           fields are translucent white/5–10% with backdrop-blur. Headings: Bricolage Grotesque; nav logo:
+           Pixelify Sans to echo the pixel avatar/video/cat. Nav is a sticky centred pill with an
+           IntersectionObserver highlighting the section in view; all links visible on mobile (scrolls sideways).
+Rejected: Glass panels on plain black (nothing to blur, looks flat); pixel font for body text (hurts readability).
+Reverses: —

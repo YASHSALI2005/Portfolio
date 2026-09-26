@@ -5,8 +5,7 @@ import { GitHubCalendar } from 'react-github-calendar';
 import { Contact } from './Contact';
 import { education, experiences, profile, projects, skills } from './data';
 import { Hero } from './Hero';
-
-const nav = ['about', 'experience', 'projects', 'skills', 'contact'];
+import { Nav } from './Nav';
 
 // Every section fades up once as it scrolls into view.
 const Section = ({ id, title, children }: { id: string; title: string; children: ReactNode }) => (
@@ -18,13 +17,15 @@ const Section = ({ id, title, children }: { id: string; title: string; children:
     transition={{ duration: 0.5, ease: 'easeOut' }}
     className="scroll-mt-24 py-12"
   >
-    <h2 className="mb-6 font-display text-xl font-semibold text-neutral-100">{title}</h2>
+    <h2 className="mb-6 font-display text-2xl font-bold tracking-tight text-neutral-100">
+      {title}
+    </h2>
     {children}
   </motion.section>
 );
 
 const Tag = ({ children }: { children: ReactNode }) => (
-  <span className="rounded-md border border-neutral-800 bg-neutral-900 px-2 py-0.5 font-mono text-xs text-neutral-400">
+  <span className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-xs text-neutral-400">
     {children}
   </span>
 );
@@ -34,29 +35,14 @@ const link =
 
 const App = () => (
   <>
-    <header className="sticky top-0 z-10 border-b border-neutral-900 bg-neutral-950/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4 text-sm">
-        <a href="#top" className="font-display text-lg font-bold">
-          {profile.name.split(' ')[0]}
-          <span className="text-neutral-500">.</span>
-        </a>
-        <div className="flex gap-5">
-          {nav.map(id => (
-            <a key={id} href={`#${id}`} className={`${link} hidden capitalize sm:inline`}>
-              {id}
-            </a>
-          ))}
-          <a href="#contact" className={`${link} sm:hidden`}>
-            Contact
-          </a>
-          {profile.resume && (
-            <a href={profile.resume} target="_blank" rel="noreferrer" className={link}>
-              Resume
-            </a>
-          )}
-        </div>
-      </nav>
-    </header>
+    {/* Soft night-sky glows fixed behind the page; the glass panels blur these. */}
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/20 blur-[130px]" />
+      <div className="absolute right-[-10%] top-1/3 h-[420px] w-[420px] rounded-full bg-blue-600/15 blur-[130px]" />
+      <div className="absolute bottom-[-10%] left-[-10%] h-[420px] w-[420px] rounded-full bg-fuchsia-600/10 blur-[130px]" />
+    </div>
+
+    <Nav />
 
     <main id="top" className="mx-auto max-w-3xl px-6">
       <Hero />
@@ -77,7 +63,7 @@ const App = () => (
           {experiences.map(exp => (
             <article key={exp.title} className="flex gap-4">
               {/* Company logo, or its first letter when no logo is set in data.ts. */}
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-neutral-800 bg-neutral-900 font-display font-bold text-neutral-300">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-display font-bold text-neutral-300 backdrop-blur">
                 {exp.logo ? (
                   <img src={exp.logo} alt={`${exp.company} logo`} className="h-6 w-6" />
                 ) : (
@@ -127,7 +113,7 @@ const App = () => (
           {projects.map(p => (
             <article
               key={p.name}
-              className="group overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900/50 transition hover:border-neutral-600"
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
             >
               <div className="relative aspect-video overflow-hidden bg-neutral-900">
                 <img
