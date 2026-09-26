@@ -60,7 +60,7 @@ const App = () => (
         transition={{ duration: 0.6 }}
         className="pb-8 pt-20 sm:pt-28"
       >
-        <img src={avatar} alt={`${profile.name} avatar`} className="mb-8 h-24 w-24 [image-rendering:pixelated]" />
+        <img src={avatar} alt={`${profile.name} avatar`} className="mb-8 h-28 w-28" />
         <p className="mb-4 font-mono text-xs uppercase tracking-widest text-neutral-500">
           {profile.role} · {profile.location}
         </p>
