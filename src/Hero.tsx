@@ -84,7 +84,7 @@ export const Hero = () => {
         loop
         playsInline
         aria-hidden="true"
-        className="mb-8 aspect-[1440/528] w-full rounded-xl border border-neutral-800 object-cover"
+        className="mb-8 aspect-[1440/562] w-full rounded-xl border border-neutral-800 object-cover"
       />
       <div className="flex items-center gap-5">
         <img
