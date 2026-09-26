@@ -58,6 +58,7 @@ export const experiences = [
 
 export const education = {
   degree: 'B.E. Information Technology',
+  grade: 'CGPA 8.20',
   school: 'A. C. Patil College of Engineering, Navi Mumbai',
   date: 'Graduated 2026',
   highlights: [

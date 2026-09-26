@@ -157,7 +157,9 @@ const App = () => (
           <h3 className="font-medium">{education.degree}</h3>
           <span className="font-mono text-xs text-neutral-500">{education.date}</span>
         </div>
-        <p className="text-sm text-neutral-500">{education.school}</p>
+        <p className="text-sm text-neutral-500">
+          {education.school} · {education.grade}
+        </p>
         <ul className="mt-3 list-disc space-y-1 pl-4 text-sm text-neutral-400">
           {education.highlights.map(h => (
             <li key={h.text}>
