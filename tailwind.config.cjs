@@ -7,6 +7,7 @@ module.exports = {
         sans: ["Geist", "sans-serif"],
         display: ['"Bricolage Grotesque"', "sans-serif"],
         pixel: ['"Pixelify Sans"', "monospace"],
+        serif: ['"Instrument Serif"', "serif"],
         mono: ['"Geist Mono"', "monospace"],
       },
     },

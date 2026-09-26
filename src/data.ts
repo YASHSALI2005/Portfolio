@@ -9,7 +9,7 @@ import travelplanner from './assets/travelplanner.webp';
 export const profile = {
   name: 'Yash Sali',
   role: 'Machine Learning Engineer',
-  location: 'Mumbai',
+  location: 'Mumbai, India',
   quote: { text: 'The best way to predict the future is to invent it.', by: 'Alan Kay' },
   tagline:
     'I build production ML and GenAI systems — from training and evaluating models to shipping the APIs they run behind.',

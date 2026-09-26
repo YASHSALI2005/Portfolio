@@ -47,12 +47,12 @@ export const Hero = () => {
           className="h-24 w-24 shrink-0 rounded-full sm:h-28 sm:w-28"
         />
         <div>
-          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+          <h1 className="text-rgb-split font-serif text-4xl leading-none sm:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-1 flex flex-wrap items-center gap-x-2 text-neutral-400">
+          <p className="mt-2 font-mono text-sm text-neutral-400 sm:text-base">
             {reduceMotion ? (
-              <span>{profile.role}</span>
+              profile.role
             ) : (
               <DecryptedText
                 text={profile.role}
@@ -60,21 +60,27 @@ export const Hero = () => {
                 sequential
                 speed={35}
                 characters="01<>/{}[]#$%&*+=ABCDEFabcdef"
-                encryptedClassName="font-mono text-violet-400"
+                encryptedClassName="text-violet-400"
               />
             )}
-            <span aria-hidden="true">·</span>
-            <span>{profile.location}</span>
-            <span aria-hidden="true">·</span>
-            <span>{profile.email}</span>
-            <button
-              onClick={copyEmail}
-              aria-label={copied ? 'Email copied' : 'Copy email'}
-              title={copied ? 'Copied!' : 'Copy email'}
-              className="scale-90 text-neutral-500 transition hover:text-neutral-100"
-            >
-              {copied ? icons.check : icons.copy}
-            </button>
+          </p>
+          <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-xs text-neutral-500 sm:text-sm">
+            <span className="flex items-center gap-1.5 [&_svg]:h-4 [&_svg]:w-4">
+              {icons.pin}
+              {profile.location}
+            </span>
+            <span className="flex items-center gap-1.5 [&_svg]:h-4 [&_svg]:w-4">
+              {icons.mail}
+              {profile.email}
+              <button
+                onClick={copyEmail}
+                aria-label={copied ? 'Email copied' : 'Copy email'}
+                title={copied ? 'Copied!' : 'Copy email'}
+                className="text-neutral-500 transition hover:text-neutral-100"
+              >
+                {copied ? icons.check : icons.copy}
+              </button>
+            </span>
           </p>
         </div>
       </div>
