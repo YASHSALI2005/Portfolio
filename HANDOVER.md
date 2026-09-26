@@ -9,7 +9,7 @@
 
 ## Open (owner input needed — from recruiter-style review 2026-09-26)
 - ML Engineer (full-time) bullets in `src/data.ts` are generic — need 2–3 concrete ones with a result.
-- Resume: source is `docs/resume.html` (no phone; `<!--PHONE-->` marks where it goes). Export with Chrome "Print → Save as PDF" (A4, no headers) to `public/resume.pdf`; must stay 1 page. Full-time ML Engineer bullets there are placeholders too.
+- Resume: source is `docs/resume.html` (no phone; `<!--PHONE-->` marks where it goes). Export with Chrome "Print → Save as PDF" (A4, no headers) to `public/Yash-Sali-Resume.pdf` and bump `?v=` on `profile.resume` in `src/data.ts`; must stay 1 page. Full-time ML Engineer bullets there are placeholders too.
 - Render free-tier demos (Clickk, Deepfake, Chest X-Ray) sleep; first visit can take 1–2 min.
 - `README.md` still mentions the old live URL; point it at https://www.yashsali.me.
 

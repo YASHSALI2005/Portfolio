@@ -17,7 +17,8 @@ export const profile = {
   github: 'https://github.com/YASHSALI2005',
   githubUser: 'YASHSALI2005',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
-  resume: '/resume.pdf', // PDF link (e.g. /resume.pdf in public/ or a Google Drive link); nav link appears once set
+  // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
+  resume: '/Yash-Sali-Resume.pdf?v=2026-09-26',
 };
 
 export const experiences = [
