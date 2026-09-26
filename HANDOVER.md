@@ -1,6 +1,6 @@
 # Handover
 
-**Branch:** `redesign` (not merged, not pushed). `main` still holds the old 3D template site, which is what's live.
+**Live:** https://www.yashsali.me — `main` auto-deploys to Vercel project `portfolio-new`. (`redesign` branch merged 2026-09-26; can be deleted.)
 
 ## Done
 - Replaced the Three.js template with a minimal dark single-page site (see ARCHITECTURE.md).
@@ -11,7 +11,6 @@
 - `public/resume.pdf` is older than the site: says student / ML Intern "Present" and shows phone number publicly. Owner to update.
 - ML Engineer (full-time) bullets are still generic.
 - Avatar (`src/assets/avatar.png`) is cut from the ChatGPT share preview (1200×630), so it's only ~560px source. Swap in the original full-size download if available.
-- Changes since the last commit not yet checked visually in a browser.
 - `travelplanner.png` (1.3 MB) and `chestxrayai.png` (800 KB) should be compressed / converted to WebP.
 - Contact form not tested end-to-end (needs the EmailJS env vars locally).
 
@@ -22,5 +21,4 @@
 
 ## Watch for
 - Before 2027-09-26: renew `yashsali.me` (paid) or it lapses.
-- Revoke the NC.me OAuth app on GitHub `yashsali1` (it has `repo` scope) — domain doesn't depend on it.
 - The GitHub calendar fetches from a third-party API (`github-contributions-api.jogruber.de`, via `react-github-calendar`). If it's down, that section shows an error message; the rest of the page is unaffected.
