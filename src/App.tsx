@@ -106,11 +106,12 @@ const App = () => {
                 className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-3 backdrop-blur-md transition hover:border-white/20 hover:bg-white/[0.05]"
               >
                 {/* Screenshot set into a gradient like a device mockup; the whole image opens the site. */}
+                {/* Private client projects have no link; the <a> then renders as plain content. */}
                 <motion.a
                   href={p.live ?? p.source}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`Open ${p.name}`}
+                  aria-label={p.live ?? p.source ? `Open ${p.name}` : undefined}
                   whileHover={{ scale: 1.015 }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 20 }}
@@ -130,6 +131,11 @@ const App = () => {
                 <div className="flex flex-1 flex-col px-1.5 pb-1 pt-4">
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="font-display text-lg font-bold">{p.name}</h3>
+                    {!p.live && !p.source && (
+                      <span className="shrink-0 rounded-full border border-white/10 px-2 py-0.5 text-xs text-neutral-400">
+                        Client project
+                      </span>
+                    )}
                     {p.live && (
                       <span className="flex shrink-0 items-center gap-1.5 text-xs text-neutral-400">
                         <span className="relative flex h-2 w-2">

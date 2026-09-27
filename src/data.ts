@@ -3,7 +3,7 @@ import chestxrayai from './assets/chestxrayai.webp';
 import clickk from './assets/clickk.webp';
 import deepfake from './assets/deepfake.webp';
 import enpointe from './assets/enpointe.png';
-import travelplanner from './assets/travelplanner.webp';
+import scheduler from './assets/scheduler.webp';
 
 export const profile = {
   name: 'Yash Sali',
@@ -98,6 +98,17 @@ export const projects = [
     paper: 'https://ieeexplore.ieee.org/document/11467195',
   },
   {
+    // Client work at EnPointe — private repo, so no code/live link and no client names or figures.
+    name: 'AI Movie Scheduler',
+    tagline: 'Production ML for cinema scheduling',
+    description:
+      'Predicts the next day’s show schedule for a cinema chain: LightGBM occupancy and quantile models score candidate sessions, and a worker pipeline (extract → score → schedule → publish) serves them through a multi-tenant API that each cinema pulls from.',
+    tags: ['LightGBM', 'Forecasting', 'FastAPI', 'PostgreSQL', 'Python'],
+    image: scheduler,
+    badge: '▶ 91% predicted occupancy',
+    accent: 'from-indigo-300 via-violet-500 to-fuchsia-700',
+  },
+  {
     name: 'Deepfake Detection',
     tagline: '92% accuracy on manipulated faces',
     description:
@@ -121,18 +132,6 @@ export const projects = [
     source:
       'https://github.com/YASHSALI2005/Chest-X-Ray-Multi-Label-Disease-Classification-using-Deep-Learning',
     live: 'https://chest-x-ray-multi-label-disease.onrender.com/',
-  },
-  {
-    name: 'TravelPlanner',
-    tagline: 'Full-stack trip discovery',
-    description:
-      'Destination search, package comparison and trip inquiries, backed by a REST API on Node.js, Express and MongoDB.',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-    image: travelplanner,
-    badge: '✈ BOM → GOI',
-    accent: 'from-amber-200 via-sky-400 to-blue-600',
-    source: 'https://github.com/YASHSALI2005/Travel-Planner-Website',
-    live: 'https://travel-planner-websitefrontend.vercel.app/',
   },
 ];
 
