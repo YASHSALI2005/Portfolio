@@ -98,14 +98,15 @@ export const projects = [
     paper: 'https://ieeexplore.ieee.org/document/11467195',
   },
   {
-    // Client work at EnPointe — private repo, so no code/live link and no client names or figures.
+    // Client work at EnPointe — private repo, so no code/live link. Screenshot has client name, email,
+    // model/data-source names and cinema codes blurred; re-blur if it's ever replaced.
     name: 'AI Movie Scheduler',
     tagline: 'Production ML for cinema scheduling',
     description:
       'Predicts the next day’s show schedule for a cinema chain: LightGBM occupancy and quantile models score candidate sessions, and a worker pipeline (extract → score → schedule → publish) serves them through a multi-tenant API that each cinema pulls from.',
     tags: ['LightGBM', 'Forecasting', 'FastAPI', 'PostgreSQL', 'Python'],
     image: scheduler,
-    badge: '▶ 91% predicted occupancy',
+    badge: '● Scheduler up',
     accent: 'from-indigo-300 via-violet-500 to-fuchsia-700',
   },
   {
