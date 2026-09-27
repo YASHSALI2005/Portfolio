@@ -16,6 +16,7 @@ export const profile = {
   github: 'https://github.com/YASHSALI2005',
   githubUser: 'YASHSALI2005',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
+  x: 'https://x.com/yash_debug',
   // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
   resume: '/Yash-Sali-Resume.pdf?v=2026-09-27',
 };

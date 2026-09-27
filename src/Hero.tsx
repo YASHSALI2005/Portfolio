@@ -9,6 +9,7 @@ import { icons } from './icons';
 const socials = [
   { label: 'GitHub', href: profile.github, icon: icons.github },
   { label: 'LinkedIn', href: profile.linkedin, icon: icons.linkedin },
+  { label: 'X', href: profile.x, icon: icons.x },
   { label: 'Email', href: `mailto:${profile.email}`, icon: icons.mail },
 ];
 
