@@ -13,14 +13,12 @@
   by capability) → Education (B.E. IT, CGPA 8.20, IEEE paper link, HACKUP; HSC 2022, SSC 2020) →
   GitHub calendar → Contact (EmailJS form).
 - Effects: glass cards with cursor spotlight, click sparks, oneko cat, background glows.
-- SEO: JSON-LD Person/WebSite/ScholarlyArticle, canonical, robots.txt, sitemap.xml, static fallback text.
+- Company: legal name "EnPointe IT Services Pvt. Ltd." (site/resume); LinkedIn page "Enpointe Global" is the same company. Full-time start Jul 2026.
+- SEO (Search Console sitemap: Success): JSON-LD Person/WebSite/ScholarlyArticle, canonical, robots.txt, sitemap.xml, static fallback text.
 
 ## Open (needs the owner)
 - **ML Engineer (full-time) bullets are generic** on site, resume and LinkedIn. Owner is asking a senior
   what client work may be named. Real work exists (see private context file) — rewrite once cleared.
-- Company name/start date mismatch: LinkedIn "Enpointe Global, Jul 2026" vs site/resume
-  "EnPointe IT Services Pvt. Ltd., Jun 2026". Owner to confirm which is right.
-- Google Search Console: owner to request indexing + wait for sitemap to show "Success".
 - Render free-tier demos (Clickk, Deepfake, Chest X-Ray) sleep; first visit can take 1–2 min.
 
 ## Domain & DNS (Namecheap)

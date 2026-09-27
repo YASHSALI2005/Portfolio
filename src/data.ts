@@ -17,7 +17,7 @@ export const profile = {
   githubUser: 'YASHSALI2005',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
   // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
-  resume: '/Yash-Sali-Resume.pdf?v=2026-09-26',
+  resume: '/Yash-Sali-Resume.pdf?v=2026-09-27',
 };
 
 export const experiences = [
@@ -25,7 +25,7 @@ export const experiences = [
     title: 'Machine Learning Engineer',
     company: 'EnPointe IT Services Pvt. Ltd.',
     logo: enpointe,
-    date: 'Jun 2026 — Present',
+    date: 'Jul 2026 — Present',
     points: [
       'Full-time role offered on the strength of my internship work.',
       'Building AI / ML and Generative AI solutions for production use.',
