@@ -1,28 +1,40 @@
 # Handover
 
-**Live:** https://www.yashsali.me — `main` auto-deploys to Vercel project `portfolio-new`. (`redesign` branch merged 2026-09-26; can be deleted.)
+**Live:** https://www.yashsali.me — `main` auto-deploys to Vercel project `portfolio-new`.
+**Last updated:** 2026-09-27
 
-## Done
-- Replaced the Three.js template with a minimal dark single-page site (see ARCHITECTURE.md).
-- All real content moved to `src/data.ts`; placeholder testimonials from the template dropped.
-- `npm run build` and `npm run lint` pass; checked visually in Chrome via `vite preview`.
+## Current site (top to bottom)
+- Floating glass pill nav (Experience · Projects · Skills · Contact · Resume); mobile hides Skills, labels
+  Experience "Work"; bigger at ≥408 px wide. Pixel-font "Yash." logo.
+- Hero: looping banner video, pixel avatar, serif name with red/cyan split, role decodes on load
+  (React Bits DecryptedText), location + email with copy button, tagline, Alan Kay quote, icon links.
+- Experience (3 EnPointe roles, 3 bullets each, "Working" shimmer badge) → Projects (Clickk, AI Movie
+  Scheduler [client project, blurred real screenshot, no links], Deepfake, Chest X-Ray) → Skills (grouped
+  by capability) → Education (B.E. IT, CGPA 8.20, IEEE paper link, HACKUP; HSC 2022, SSC 2020) →
+  GitHub calendar → Contact (EmailJS form).
+- Effects: glass cards with cursor spotlight, click sparks, oneko cat, background glows.
+- SEO: JSON-LD Person/WebSite/ScholarlyArticle, canonical, robots.txt, sitemap.xml, static fallback text.
 
-## Open (owner input needed — from recruiter-style review 2026-09-26)
-- ML Engineer (full-time) bullets in `src/data.ts` are generic — need 2–3 concrete ones with a result.
-- Resume: source is `docs/resume.html` (no phone; `<!--PHONE-->` marks where it goes). Export with Chrome "Print → Save as PDF" (A4, no headers) to `public/Yash-Sali-Resume.pdf` and bump `?v=` on `profile.resume` in `src/data.ts`; must stay 1 page. Full-time ML Engineer bullets there are placeholders too.
+## Open (needs the owner)
+- **ML Engineer (full-time) bullets are generic** on site, resume and LinkedIn. Owner is asking a senior
+  what client work may be named. Real work exists (see private context file) — rewrite once cleared.
+- Company name/start date mismatch: LinkedIn "Enpointe Global, Jul 2026" vs site/resume
+  "EnPointe IT Services Pvt. Ltd., Jun 2026". Owner to confirm which is right.
+- Google Search Console: owner to request indexing + wait for sitemap to show "Success".
 - Render free-tier demos (Clickk, Deepfake, Chest X-Ray) sleep; first visit can take 1–2 min.
 
-## Domain
-- `yashsali.me` — Namecheap account `Yashsali12`, free via GitHub Student Pack (claimed through GitHub account `yashsali1`). Expires **2027-09-26**, auto-renew OFF.
-- Vercel project `portfolio-new`: `www.yashsali.me` serves Production; `yashsali.me` 308-redirects to www.
-- Namecheap DNS: A `@` → 216.198.79.1, CNAME `www` → e0b5eb0cfb4b45e9.vercel-dns-017.com.
-- Namecheap DNS also has TXT `@` = `google-site-verification=…` (Search Console). Don't delete it — Google re-checks and would drop verification.
+## Domain & DNS (Namecheap)
+- `yashsali.me`, free via GitHub Student Pack. Expires **2027-09-26**, auto-renew OFF — renew before then.
+- A `@` → 216.198.79.1 · CNAME `www` → e0b5eb0cfb4b45e9.vercel-dns-017.com.
+- TXT `@` = `google-site-verification=…` (Search Console) — don't delete; TXT spf for email forwarding.
+- `yashsali.me` 308-redirects to `www.yashsali.me`.
 
-## SEO
-- `index.html`: canonical, keywords, Person/WebSite/ScholarlyArticle JSON-LD, static fallback text inside `#root` (React replaces it). Keep fallback text in sync with `src/data.ts`.
-- `public/robots.txt` + `public/sitemap.xml` — bump `<lastmod>` on big content changes.
-- Search Console TXT record added 2026-09-27. Owner to do: click Verify, submit sitemap; set yashsali.me as the Website on GitHub profile.
+## Contact form
+- EmailJS; keys are `VITE_EMAILJS_*` in Vercel env vars. It failed once with Gmail "Invalid grant";
+  owner reconnected Gmail in the EmailJS dashboard. If it breaks again, same fix.
 
 ## Watch for
-- Before 2027-09-26: renew `yashsali.me` (paid) or it lapses.
-- The GitHub calendar fetches from a third-party API (`github-contributions-api.jogruber.de`, via `react-github-calendar`). If it's down, that section shows an error message; the rest of the page is unaffected.
+- Resume changes: re-export PDF, keep one page, bump `?v=` (browsers cache the old file otherwise).
+- `src/assets/scheduler.webp` is a real client dashboard with confidential fields blurred. If replaced,
+  blur client name/badge, emails, model/data-source names and cinema codes again.
+- The GitHub calendar uses a third-party API (`react-github-calendar`); if it's down only that section fails.
