@@ -120,12 +120,14 @@ const App = () => {
                   <span className="absolute left-3 top-3 z-10 rounded-md border border-white/20 bg-black/60 px-2 py-1 font-mono text-[11px] text-neutral-100 backdrop-blur">
                     {p.badge}
                   </span>
-                  <img
-                    src={p.image}
-                    alt={`${p.name} screenshot`}
-                    loading="lazy"
-                    className="absolute left-[9%] top-[17%] w-[96%] rounded-tl-lg shadow-2xl shadow-black/50 ring-1 ring-black/20 transition duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2"
-                  />
+                  {p.image && (
+                    <img
+                      src={p.image}
+                      alt={`${p.name} screenshot`}
+                      loading="lazy"
+                      className="absolute left-[9%] top-[17%] w-[96%] rounded-tl-lg shadow-2xl shadow-black/50 ring-1 ring-black/20 transition duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2"
+                    />
+                  )}
                 </motion.a>
 
                 <div className="flex flex-1 flex-col px-1.5 pb-1 pt-4">

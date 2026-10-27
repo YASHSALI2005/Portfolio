@@ -6,11 +6,11 @@
 <style>
   @page { size: A4; margin: 10mm 14mm; }
   * { box-sizing: border-box; }
-  body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.4pt; line-height: 1.24; color: #111; margin: 0; }
-  h1 { font-family: "Times New Roman", Georgia, serif; font-size: 22pt; text-align: center; margin: 0; letter-spacing: 0.5px; }
-  .contact { text-align: center; font-size: 10pt; margin: 3px 0 2px; }
+  body { font-family: Georgia, "Times New Roman", serif; font-size: 9.8pt; line-height: 1.22; color: #111; margin: 0; }
+  h1 { font-size: 20pt; font-weight: 700; text-align: center; margin: 0; letter-spacing: 0.5px; }
+  .contact { text-align: center; font-size: 8.8pt; margin: 3px 0 2px; }
   .contact a { color: #1a0dab; text-decoration: none; }
-  h2 { font-family: "Times New Roman", Georgia, serif; font-size: 12pt; text-transform: uppercase; margin: 8px 0 3px; padding-bottom: 2px; border-bottom: 1.2px solid #111; letter-spacing: 0.5px; }
+  h2 { font-size: 10.5pt; font-weight: 700; text-transform: uppercase; margin: 8px 0 3px; padding-bottom: 2px; border-bottom: 1.2px solid #111; letter-spacing: 0.5px; }
   .row { display: flex; justify-content: space-between; gap: 12px; }
   .row b { font-weight: bold; }
   .item { margin-bottom: 4px; }
@@ -32,21 +32,15 @@
   </div>
 
   <h2>Summary</h2>
-  <p>Machine Learning Engineer at EnPointe IT Services (converted to full-time after an ML internship), building ML and GenAI systems
-  end to end: model training and fine-tuning (wake-word detection, time-series forecasting), RAG pipelines for LLM-powered web
+  <p>Machine Learning Engineer at EnPointe IT Services (joined as an ML intern, converted to full-time), building ML and GenAI systems
+  end to end: model training and fine-tuning (wake-word detection, demand and time-series forecasting), RAG pipelines for LLM-powered web
   applications, and the data pipelines and APIs behind them. Full-stack background; co-author of an IEEE-published paper.</p>
 
   <h2>Experience</h2>
   <div class="item">
-    <div class="row"><b>Machine Learning Engineer — EnPointe IT Services Pvt. Ltd.</b><b>Jul 2026 – Present</b></div>
+    <div class="row"><b>Machine Learning Engineer — EnPointe IT Services Pvt. Ltd.</b><b>Jan 2026 – Present</b></div>
     <ul>
-      <li>Offered a full-time role based on performance during the ML internship.</li>
       <li>Building and maintaining ML and Generative AI solutions for production use.</li>
-    </ul>
-  </div>
-  <div class="item">
-    <div class="row"><b>Machine Learning Intern — EnPointe IT Services Pvt. Ltd.</b><b>Feb 2026 – Jun 2026</b></div>
-    <ul>
       <li>Engineered and fine-tuned custom ML models, including wake-word detection and time-series forecasting, on datasets built through automated data extraction and preprocessing workflows.</li>
       <li>Developed and deployed Retrieval-Augmented Generation (RAG) pipelines integrating LLMs into existing web applications, working with the full-stack team to take models from research to production APIs.</li>
     </ul>
@@ -68,17 +62,17 @@
     </ul>
   </div>
   <div class="item">
-    <div class="row"><b>Deepfake Detection Model</b><b>Jan 2025 – Mar 2025</b></div>
+    <div class="row"><b>Noah Scheduler — ML Cinema Session Scheduling (client project)</b><b>May 2026 – Aug 2026</b></div>
     <ul>
-      <li>Deep learning model to detect deepfake media, using OpenCV for frame processing and CNNs built on pre-trained models for facial feature analysis.</li>
-      <li>Achieved 92% accuracy with the EfficientNet architecture; served through a web interface.</li>
+      <li>Built a LightGBM occupancy model (plus P10/P50/P90 quantile models) on 94K+ shows across 9 cinemas; beat both naive baselines at every cinema, cutting show-level WAPE to 54.3% vs 66.7% on an unseen test month.</li>
+      <li>Served predicted schedules through a multi-tenant FastAPI/PostgreSQL pull API fed by a worker pipeline (extract, score, schedule, publish), with a model registry and per-tenant feature mapping.</li>
     </ul>
   </div>
   <div class="item">
-    <div class="row"><b>Chest X-Ray AI — Multi-label Disease Classification</b></div>
+    <div class="row"><b>Noah Stock — Inventory Par-Level Planning (client project)</b><b>Jul 2026 – Oct 2026</b></div>
     <ul>
-      <li>DenseNet121 fine-tuned in PyTorch for multi-label classification of chest X-rays on CheXpert-style labels.</li>
-      <li>Web app with image upload and an adjustable decision threshold to trade recall for precision.</li>
+      <li>Replaced a manual weekly-average + flat-10%-buffer method with a demand-driven par engine: empirical demand over the review + lead-time window, newsvendor service levels per item, and calendar-based seasonality (Ramadan/Eid).</li>
+      <li>Ranks the work queue by expected lost margin; validated by backtesting old vs new method on a year of history across 9 cinemas. FastAPI, PostgreSQL, Redis, React.</li>
     </ul>
   </div>
 
@@ -91,10 +85,10 @@
 
   <h2>Technical Skills</h2>
   <div class="skills">
-    <div><b>Machine Learning:</b> PyTorch, CNNs (EfficientNet, DenseNet), time-series forecasting, wake-word detection, fine-tuning, model evaluation, OpenCV</div>
-    <div><b>GenAI &amp; LLMs:</b> RAG pipelines, LLM integration, Llama 3.2 / Ollama</div>
-    <div><b>Languages &amp; Data:</b> Python, Java, JavaScript/TypeScript, SQL (MySQL), MongoDB, data extraction and preprocessing</div>
-    <div><b>Engineering:</b> Flask, REST APIs, Node.js/Express, React/Next.js, Docker, Git, Vercel, Render</div>
+    <div><b>Machine Learning:</b> PyTorch, LightGBM, PyTorch, CNNs, time-series &amp; demand forecasting, inventory optimisation, wake-word detection, fine-tuning, model evaluation</div>
+    <div><b>GenAI &amp; LLMs:</b> RAG pipelines, LLM integration, Llama 3.2 / Ollama, AST-based code analysis</div>
+    <div><b>Languages &amp; Data:</b> Python, Java, JavaScript/TypeScript, SQL (PostgreSQL, MySQL), MongoDB, data extraction and preprocessing</div>
+    <div><b>Engineering:</b> FastAPI, Flask, REST APIs, Node.js/Express, React/Next.js, Docker, Git, Vercel, Render</div>
   </div>
 
   <h2>Education</h2>

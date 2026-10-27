@@ -1,7 +1,5 @@
 // All site content lives here — edit this file, not the components.
-import chestxrayai from './assets/chestxrayai.webp';
 import clickk from './assets/clickk.webp';
-import deepfake from './assets/deepfake.webp';
 import enpointe from './assets/enpointe.png';
 import scheduler from './assets/scheduler.webp';
 
@@ -18,7 +16,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/yashsali05',
   x: 'https://x.com/yash_debug',
   // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
-  resume: '/Yash-Sali-Resume.pdf?v=2026-09-27',
+  resume: '/Yash-Sali-Resume.pdf?v=2026-10-27',
 };
 
 export const experiences = [
@@ -26,22 +24,11 @@ export const experiences = [
     title: 'Machine Learning Engineer',
     company: 'EnPointe IT Services Pvt. Ltd.',
     logo: enpointe,
-    date: 'Jul 2026 — Present',
+    date: 'Jan 2026 — Present',
     points: [
-      'Full-time role offered on the strength of my internship work.',
-      'Building AI / ML and Generative AI solutions for production use.',
-      'Owning work end to end — from data and model development to the APIs that serve models.',
-    ],
-  },
-  {
-    title: 'Machine Learning Intern',
-    company: 'EnPointe IT Services Pvt. Ltd.',
-    logo: enpointe,
-    date: 'Feb 2026 — Jun 2026',
-    points: [
-      'Built and fine-tuned custom ML models, including wake-word detection and time-series forecasting.',
-      'Built and deployed RAG pipelines that bring LLMs into existing web applications.',
-      'Automated data extraction and preprocessing for training datasets, and worked with the full-stack team to take models to production APIs.',
+      'Building and maintaining AI / ML and Generative AI solutions for production use.',
+      'Built and fine-tuned custom ML models, including wake-word detection, time-series and demand forecasting.',
+      'Built and deployed RAG pipelines that bring LLMs into existing web applications, and own the work end to end — from data and models to the APIs that serve them.',
     ],
   },
   {
@@ -111,29 +98,14 @@ export const projects = [
     accent: 'from-indigo-300 via-violet-500 to-fuchsia-700',
   },
   {
-    name: 'Deepfake Detection',
-    tagline: '92% accuracy on manipulated faces',
+    // Client work at EnPointe — private repo, no screenshot (client data), so the card shows the gradient + badge only.
+    name: 'AI Stock Planner',
+    tagline: 'Demand-driven par levels for cinema F&B',
     description:
-      'Flags deepfake video by analysing faces frame by frame. OpenCV extracts and prepares frames; an EfficientNet CNN built on pre-trained weights classifies them, reaching 92% accuracy. Served through a web app.',
-    tags: ['Deep learning', 'EfficientNet', 'CNN', 'OpenCV', 'Python'],
-    image: deepfake,
-    badge: '● FAKE · 92% accuracy',
-    accent: 'from-violet-300 via-indigo-500 to-indigo-800',
-    source: 'https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL',
-    live: 'https://deepfake-detection-model-frontendd.onrender.com/',
-  },
-  {
-    name: 'Chest X-Ray AI',
-    tagline: 'Multi-label disease classification',
-    description:
-      'Flags several possible conditions in one chest X-ray. DenseNet121 fine-tuned on CheXpert-style labels with a BCE-with-logits loss and evaluated with macro-F1; the web app exposes the decision threshold so you can trade recall for precision.',
-    tags: ['PyTorch', 'DenseNet121', 'Multi-label', 'Python', 'React'],
-    image: chestxrayai,
-    badge: 'DenseNet121 · threshold 0.50',
-    accent: 'from-emerald-300 via-teal-500 to-slate-800',
-    source:
-      'https://github.com/YASHSALI2005/Chest-X-Ray-Multi-Label-Disease-Classification-using-Deep-Learning',
-    live: 'https://chest-x-ray-multi-label-disease.onrender.com/',
+      'Replaces a manual weekly-average method with a measured one: demand over each item’s review + lead-time window is taken from its own sales history, service levels come from a newsvendor trade-off, and the work queue is ranked by expected lost margin. Backtested against the old method on a year of history across nine cinemas.',
+    tags: ['Demand forecasting', 'Inventory optimisation', 'FastAPI', 'PostgreSQL', 'React'],
+    badge: '● Ranked by lost margin',
+    accent: 'from-amber-300 via-orange-500 to-rose-700',
   },
 ];
 
@@ -142,11 +114,12 @@ export const skills: Record<string, string[]> = {
   'Machine learning': [
     'PyTorch',
     'CNNs (EfficientNet, DenseNet)',
-    'Time-series forecasting',
+    'LightGBM',
+    'Time-series & demand forecasting',
+    'Inventory optimisation',
     'Wake-word detection',
     'Fine-tuning',
-    'Evaluation (F1, accuracy)',
-    'OpenCV',
+    'Evaluation (WAPE, F1, accuracy)',
   ],
   'GenAI & LLMs': [
     'RAG pipelines',
@@ -154,8 +127,9 @@ export const skills: Record<string, string[]> = {
     'Llama 3.2 / Ollama',
     'AST-based code analysis',
   ],
-  Data: ['Python', 'Data extraction', 'Preprocessing & dataset building', 'MySQL', 'MongoDB'],
+  Data: ['Python', 'Data extraction', 'Preprocessing & dataset building', 'PostgreSQL', 'MySQL', 'MongoDB'],
   Shipping: [
+    'FastAPI',
     'Flask',
     'REST APIs',
     'Node.js / Express',
