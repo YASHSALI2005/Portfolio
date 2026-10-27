@@ -1,7 +1,9 @@
 // All site content lives here — edit this file, not the components.
 import clickk from './assets/clickk.webp';
+import deepfake from './assets/deepfake.webp';
 import enpointe from './assets/enpointe.png';
 import scheduler from './assets/scheduler.webp';
+import stock from './assets/stock.webp';
 
 export const profile = {
   name: 'Yash Sali',
@@ -98,14 +100,28 @@ export const projects = [
     accent: 'from-indigo-300 via-violet-500 to-fuchsia-700',
   },
   {
-    // Client work at EnPointe — private repo, no screenshot (client data), so the card shows the gradient + badge only.
+    // Client work at EnPointe — private repo, no links. Screenshot has the client name, email and cinema
+    // names blurred; re-blur if it's ever replaced.
     name: 'AI Stock Planner',
     tagline: 'Demand-driven par levels for cinema F&B',
     description:
       'Replaces a manual weekly-average method with a measured one: demand over each item’s review + lead-time window is taken from its own sales history, service levels come from a newsvendor trade-off, and the work queue is ranked by expected lost margin. Backtested against the old method on a year of history across nine cinemas.',
     tags: ['Demand forecasting', 'Inventory optimisation', 'FastAPI', 'PostgreSQL', 'React'],
+    image: stock,
     badge: '● Ranked by lost margin',
     accent: 'from-amber-300 via-orange-500 to-rose-700',
+  },
+  {
+    name: 'Deepfake Detection',
+    tagline: '92% accuracy on manipulated faces',
+    description:
+      'Flags deepfake video by analysing faces frame by frame. OpenCV extracts and prepares frames; an EfficientNet CNN built on pre-trained weights classifies them, reaching 92% accuracy. Served through a web app.',
+    tags: ['Deep learning', 'EfficientNet', 'CNN', 'OpenCV', 'Python'],
+    image: deepfake,
+    badge: '● FAKE · 92% accuracy',
+    accent: 'from-violet-300 via-indigo-500 to-indigo-800',
+    source: 'https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL',
+    live: 'https://deepfake-detection-model-frontendd.onrender.com/',
   },
 ];
 
@@ -120,6 +136,7 @@ export const skills: Record<string, string[]> = {
     'Wake-word detection',
     'Fine-tuning',
     'Evaluation (WAPE, F1, accuracy)',
+    'OpenCV',
   ],
   'GenAI & LLMs': [
     'RAG pipelines',
