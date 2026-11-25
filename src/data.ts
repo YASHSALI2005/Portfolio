@@ -12,13 +12,13 @@ export const profile = {
   quote: { text: 'The best way to predict the future is to invent it.', by: 'Alan Kay' },
   tagline:
     'I build production ML and GenAI systems — from training and evaluating models to shipping the APIs they run behind.',
-  email: 'salirajesh7@gmail.com',
-  github: 'https://github.com/YASHSALI2005',
-  githubUser: 'YASHSALI2005',
+  email: 'yashsali2684@gmail.com',
+  github: 'https://github.com/Yashsali05',
+  githubUser: 'Yashsali05',
   linkedin: 'https://www.linkedin.com/in/yashsali05',
   x: 'https://x.com/yash_debug',
   // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
-  resume: '/Yash-Sali-Resume.pdf?v=2026-10-27',
+  resume: '/Yash-Sali-Resume.pdf?v=2026-11-25',
 };
 
 export const experiences = [
@@ -83,7 +83,7 @@ export const projects = [
     image: clickk,
     badge: '$ clickk fix --ai',
     accent: 'from-cyan-300 via-sky-500 to-blue-700',
-    source: 'https://github.com/YASHSALI2005/CLICKK',
+    source: 'https://github.com/Yashsali05/CLICKK',
     live: 'https://clickk-frontend.onrender.com/',
     paper: 'https://ieeexplore.ieee.org/document/11467195',
   },
@@ -120,7 +120,7 @@ export const projects = [
     image: deepfake,
     badge: '● FAKE · 92% accuracy',
     accent: 'from-violet-300 via-indigo-500 to-indigo-800',
-    source: 'https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL',
+    source: 'https://github.com/Yashsali05/DEEPFAKE-DETECTION-MODEL',
     live: 'https://deepfake-detection-model-frontendd.onrender.com/',
   },
 ];
