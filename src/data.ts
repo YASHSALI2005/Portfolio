@@ -18,7 +18,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/yashsali05',
   x: 'https://x.com/yash_debug',
   // Bump ?v= whenever the PDF is replaced, so browsers don't keep showing a cached old copy.
-  resume: '/Yash-Sali-Resume.pdf?v=2026-10-27',
+  resume: '/Yash-Sali-Resume.pdf?v=2026-11-25b',
 };
 
 export const experiences = [
